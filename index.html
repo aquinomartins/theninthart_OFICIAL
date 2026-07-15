@@ -18,6 +18,7 @@
     <link rel="canonical" href="https://www.theninthart.com/tempo.html" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/tempo.css" />
+    <link rel="stylesheet" href="styles/dashboard-hub.css" />
   </head>
   <body class="page-home page-tempo" data-page="tempo">
       <div class="floating-narrative-layer"><img src="/tempo/images/imagem1.png" alt="Ir para o sistema visual" role="button" tabindex="0" aria-pressed="false" aria-label="Ir para o sistema visual" data-floating-narrative></div>
@@ -57,6 +58,73 @@
           <div class="panel panel-accent"></div>
           <div class="flow-line flow-one"></div>
           <div class="flow-line flow-two"></div>
+        </div>
+      </section>
+
+
+
+      <section
+        id="dashboard-hub"
+        class="dashboard-hub reveal"
+        data-dashboard-hub
+        aria-labelledby="dashboard-hub-title"
+        aria-busy="false"
+      >
+        <div class="dashboard-hub__inner">
+          <form class="dashboard-search" role="search" data-dashboard-search>
+            <span class="dashboard-search__leading" aria-hidden="true"></span>
+            <label class="sr-only" for="dashboard-search-input">Pesquisar itens</label>
+            <input
+              id="dashboard-search-input"
+              class="dashboard-search__input"
+              type="search"
+              name="query"
+              placeholder="Pesquise ou digite um termo"
+              autocomplete="off"
+            />
+            <button class="dashboard-search__submit" type="submit" aria-label="Pesquisar">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="m20 20-4.2-4.2m1.2-4.8a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </form>
+
+          <div class="shortcut-grid" data-shortcut-grid aria-label="Atalhos do painel"></div>
+
+          <section class="widget-section" data-widget-section aria-labelledby="dashboard-hub-title">
+            <header class="widget-section__header">
+              <div class="widget-section__title-group">
+                <h2 id="dashboard-hub-title">Widgets</h2>
+                <button
+                  class="widget-section__toggle"
+                  type="button"
+                  data-widget-toggle
+                  aria-expanded="true"
+                  aria-controls="dashboard-widget-grid"
+                  aria-label="Recolher widgets"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="widget-section__menu"
+                type="button"
+                data-widget-menu
+                aria-label="Mais opções dos widgets"
+                aria-haspopup="menu"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="5" cy="12" r="1.5" fill="currentColor" />
+                  <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+                  <circle cx="19" cy="12" r="1.5" fill="currentColor" />
+                </svg>
+              </button>
+            </header>
+            <div id="dashboard-widget-grid" class="widget-grid" data-widget-grid></div>
+          </section>
+          <p class="dashboard-hub__notice" data-dashboard-live aria-live="polite" hidden></p>
         </div>
       </section>
 
@@ -213,6 +281,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="module" src="scripts/dashboard-hub.js"></script>
     <script type="module" src="scripts/tempo.js"></script>
   </body>
 </html>
