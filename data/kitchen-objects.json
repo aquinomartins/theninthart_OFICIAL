@@ -1,0 +1,418 @@
+[
+  {
+    "id": "forno",
+    "name": "Forno",
+    "function": "assar e transformar",
+    "category": "arquitetura",
+    "temporalWeights": {
+      "past": 0.5,
+      "present": 0.3,
+      "future": 0.2
+    },
+    "versions": [
+      {
+        "id": "forno-past",
+        "eraId": "past",
+        "label": "Forno — Versão de barro",
+        "asset": null,
+        "description": "Forno em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 54,
+          "y": 58
+        },
+        "scale": 1
+      },
+      {
+        "id": "forno-present",
+        "eraId": "present",
+        "label": "Forno — Versão doméstica",
+        "asset": null,
+        "description": "Forno em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 54,
+          "y": 58
+        },
+        "scale": 1
+      },
+      {
+        "id": "forno-future",
+        "eraId": "future",
+        "label": "Forno — Versão orbital",
+        "asset": null,
+        "description": "Forno em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 54,
+          "y": 58
+        },
+        "scale": 1
+      }
+    ]
+  },
+  {
+    "id": "liquidificador",
+    "name": "Liquidificador",
+    "function": "misturar e triturar",
+    "category": "utensilio",
+    "temporalWeights": {
+      "past": 0.2,
+      "present": 0.35,
+      "future": 0.45
+    },
+    "versions": [
+      {
+        "id": "liquidificador-past",
+        "eraId": "past",
+        "label": "Liquidificador — equivalente manual",
+        "asset": null,
+        "description": "Liquidificador em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 24,
+          "y": 55
+        },
+        "scale": 1
+      },
+      {
+        "id": "liquidificador-present",
+        "eraId": "present",
+        "label": "Liquidificador — uso cotidiano",
+        "asset": null,
+        "description": "Liquidificador em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 24,
+          "y": 55
+        },
+        "scale": 1
+      },
+      {
+        "id": "liquidificador-future",
+        "eraId": "future",
+        "label": "Liquidificador — núcleo projetado",
+        "asset": null,
+        "description": "Liquidificador em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 24,
+          "y": 55
+        },
+        "scale": 1
+      }
+    ]
+  },
+  {
+    "id": "mesa",
+    "name": "Mesa",
+    "function": "apoiar o ritual",
+    "category": "mobiliario",
+    "temporalWeights": {
+      "past": 0.34,
+      "present": 0.33,
+      "future": 0.33
+    },
+    "versions": [
+      {
+        "id": "mesa-past",
+        "eraId": "past",
+        "label": "Mesa — Madeira marcada",
+        "asset": null,
+        "description": "Mesa em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 46,
+          "y": 72
+        },
+        "scale": 1
+      },
+      {
+        "id": "mesa-present",
+        "eraId": "present",
+        "label": "Mesa — Metal esmaltado",
+        "asset": null,
+        "description": "Mesa em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 46,
+          "y": 72
+        },
+        "scale": 1
+      },
+      {
+        "id": "mesa-future",
+        "eraId": "future",
+        "label": "Mesa — Liga leve",
+        "asset": null,
+        "description": "Mesa em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 46,
+          "y": 72
+        },
+        "scale": 1
+      }
+    ]
+  },
+  {
+    "id": "colher",
+    "name": "Colher",
+    "function": "conduzir a massa",
+    "category": "utensilio",
+    "temporalWeights": {
+      "past": 0.5,
+      "present": 0.3,
+      "future": 0.2
+    },
+    "versions": [
+      {
+        "id": "colher-past",
+        "eraId": "past",
+        "label": "Colher — Versão de barro",
+        "asset": null,
+        "description": "Colher em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 67,
+          "y": 69
+        },
+        "scale": 1
+      },
+      {
+        "id": "colher-present",
+        "eraId": "present",
+        "label": "Colher — Versão doméstica",
+        "asset": null,
+        "description": "Colher em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 67,
+          "y": 69
+        },
+        "scale": 1
+      },
+      {
+        "id": "colher-future",
+        "eraId": "future",
+        "label": "Colher — Versão orbital",
+        "asset": null,
+        "description": "Colher em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 67,
+          "y": 69
+        },
+        "scale": 1
+      }
+    ]
+  },
+  {
+    "id": "forma",
+    "name": "Forma de bolo",
+    "function": "guardar o vestígio",
+    "category": "recipiente",
+    "temporalWeights": {
+      "past": 0.2,
+      "present": 0.35,
+      "future": 0.45
+    },
+    "versions": [
+      {
+        "id": "forma-past",
+        "eraId": "past",
+        "label": "Forma de bolo — equivalente manual",
+        "asset": null,
+        "description": "Forma de bolo em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 56,
+          "y": 64
+        },
+        "scale": 1
+      },
+      {
+        "id": "forma-present",
+        "eraId": "present",
+        "label": "Forma de bolo — uso cotidiano",
+        "asset": null,
+        "description": "Forma de bolo em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 56,
+          "y": 64
+        },
+        "scale": 1
+      },
+      {
+        "id": "forma-future",
+        "eraId": "future",
+        "label": "Forma de bolo — núcleo projetado",
+        "asset": null,
+        "description": "Forma de bolo em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 56,
+          "y": 64
+        },
+        "scale": 1
+      }
+    ]
+  },
+  {
+    "id": "farinha",
+    "name": "Pote de farinha",
+    "function": "registrar rastros",
+    "category": "ingrediente",
+    "temporalWeights": {
+      "past": 0.34,
+      "present": 0.33,
+      "future": 0.33
+    },
+    "versions": [
+      {
+        "id": "farinha-past",
+        "eraId": "past",
+        "label": "Pote de farinha — Madeira marcada",
+        "asset": null,
+        "description": "Pote de farinha em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 32,
+          "y": 68
+        },
+        "scale": 1
+      },
+      {
+        "id": "farinha-present",
+        "eraId": "present",
+        "label": "Pote de farinha — Metal esmaltado",
+        "asset": null,
+        "description": "Pote de farinha em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 32,
+          "y": 68
+        },
+        "scale": 1
+      },
+      {
+        "id": "farinha-future",
+        "eraId": "future",
+        "label": "Pote de farinha — Liga leve",
+        "asset": null,
+        "description": "Pote de farinha em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-main",
+        "position": {
+          "x": 32,
+          "y": 68
+        },
+        "scale": 1
+      }
+    ]
+  },
+  {
+    "id": "lamparina",
+    "name": "Lamparina",
+    "function": "dar luz ao passado",
+    "category": "luz",
+    "temporalWeights": {
+      "past": 0.5,
+      "present": 0.3,
+      "future": 0.2
+    },
+    "versions": [
+      {
+        "id": "lamparina-past",
+        "eraId": "past",
+        "label": "Lamparina — Versão de barro",
+        "asset": null,
+        "description": "Lamparina em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-front",
+        "position": {
+          "x": 75,
+          "y": 43
+        },
+        "scale": 1
+      },
+      {
+        "id": "lamparina-present",
+        "eraId": "present",
+        "label": "Lamparina — Versão doméstica",
+        "asset": null,
+        "description": "Lamparina em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-front",
+        "position": {
+          "x": 75,
+          "y": 43
+        },
+        "scale": 1
+      },
+      {
+        "id": "lamparina-future",
+        "eraId": "future",
+        "label": "Lamparina — Versão orbital",
+        "asset": null,
+        "description": "Lamparina em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-front",
+        "position": {
+          "x": 75,
+          "y": 43
+        },
+        "scale": 1
+      }
+    ]
+  },
+  {
+    "id": "janela",
+    "name": "Janela",
+    "function": "abrir o fora de quadro",
+    "category": "arquitetura",
+    "temporalWeights": {
+      "past": 0.2,
+      "present": 0.35,
+      "future": 0.45
+    },
+    "versions": [
+      {
+        "id": "janela-past",
+        "eraId": "past",
+        "label": "Janela — equivalente manual",
+        "asset": null,
+        "description": "Janela em estado past, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-behind",
+        "position": {
+          "x": 18,
+          "y": 32
+        },
+        "scale": 1
+      },
+      {
+        "id": "janela-present",
+        "eraId": "present",
+        "label": "Janela — uso cotidiano",
+        "asset": null,
+        "description": "Janela em estado present, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-behind",
+        "position": {
+          "x": 18,
+          "y": 32
+        },
+        "scale": 1
+      },
+      {
+        "id": "janela-future",
+        "eraId": "future",
+        "label": "Janela — núcleo projetado",
+        "asset": null,
+        "description": "Janela em estado future, reconhecível pela função e deslocado pelo quadro.",
+        "layer": "objects-behind",
+        "position": {
+          "x": 18,
+          "y": 32
+        },
+        "scale": 1
+      }
+    ]
+  }
+]

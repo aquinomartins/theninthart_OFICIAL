@@ -1,0 +1,7 @@
+[
+  { "id": "sequence", "label": "Sequência", "name": "Engrenagem de Sarjeta", "effect": "transição e causalidade", "temporalWeights": { "past": 0.45, "present": 0.35, "future": 0.2 }, "accent": "#ffb35c", "summary": "A sarjeta deixa de separar quadros e passa a conduzir causas.", "imageKey": "mechanism" },
+  { "id": "rhythm", "label": "Ritmo", "name": "Relógio de Forno", "effect": "velocidade e cadência", "temporalWeights": { "past": 0.15, "present": 0.4, "future": 0.45 }, "accent": "#ff7a59", "summary": "O tempo assa em batidas curtas, como Pio correndo entre migalhas.", "imageKey": "speed" },
+  { "id": "archive", "label": "Arquivo", "name": "Forma Vazia", "effect": "memória e ancoragem", "temporalWeights": { "past": 0.6, "present": 0.3, "future": 0.1 }, "accent": "#d7a86e", "summary": "A forma vazia segura o cheiro do bolo como se fosse uma prova.", "imageKey": "coexistence" },
+  { "id": "research", "label": "Pesquisa", "name": "Pilão Magnético", "effect": "equivalência histórica", "temporalWeights": { "past": 0.35, "present": 0.25, "future": 0.4 }, "accent": "#7fd1ae", "summary": "Cada utensílio procura seu equivalente em outra época.", "imageKey": "versatility" },
+  { "id": "interaction", "label": "Interação", "name": "Colher Condutora", "effect": "mistura escolhas privadas e públicas", "temporalWeights": { "past": 0.2, "present": 0.45, "future": 0.35 }, "accent": "#8fb8ff", "summary": "A colher conduz a sua linha até a cozinha pública.", "imageKey": "collective" }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "past", "label": "Passado", "order": 10, "yearMin": null, "yearMax": 1899, "theme": { "accent": "#d99a4e", "ambient": "barro e brasa" } },
+  { "id": "present", "label": "Presente", "order": 20, "yearMin": 1900, "yearMax": 2099, "theme": { "accent": "#0a84ff", "ambient": "azulejo e lâmpada" } },
+  { "id": "future", "label": "Futuro", "order": 30, "yearMin": 2100, "yearMax": null, "theme": { "accent": "#b56cff", "ambient": "reflexo orbital" } }
+]
