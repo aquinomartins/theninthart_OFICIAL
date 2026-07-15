@@ -34,16 +34,16 @@ export const dashboardHubDemoData = {
     updatedAt: now
   })),
   widgets: [
-    { id: 'comparison-overview', type: 'comparison', title: 'Comparação', subtitle: 'Visão neutra', order: 1, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { tabs: ['Hoje','Semana'], activeTab: 'Hoje', status: 'Preparado', time: '14:30', date: 'Sessão demonstrativa', participants: [{ name: 'Núcleo A', detail: 'Entrada' }, { name: 'Núcleo B', detail: 'Resposta' }] }, permissions: {}, metadata: { tags: ['comparação'] }, interactions: [], createdAt: now, updatedAt: now },
-    { id: 'state-list', type: 'list', title: 'Estados', subtitle: null, order: 2, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { items: [
+    { id: 'comparison-widget', type: 'comparison', title: 'Comparação', subtitle: 'Visão neutra', order: 1, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { tabs: ['Hoje','Semana'], activeTab: 'Hoje', status: 'Preparado', time: '14:30', date: 'Sessão demonstrativa', participants: [{ name: 'Núcleo A', detail: 'Entrada' }, { name: 'Núcleo B', detail: 'Resposta' }] }, permissions: {}, metadata: { tags: ['comparação'] }, interactions: [], createdAt: now, updatedAt: now },
+    { id: 'states-widget', type: 'list', title: 'Estados', subtitle: null, order: 2, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { items: [
       { id: 's1', label: 'Arquivo', value: '08:41', secondary: 'Sincronizado', iconUrl: null, status: 'active', metadata: {} },
       { id: 's2', label: 'Coleção', value: '12 itens', secondary: 'Atualizado', iconUrl: null, status: 'active', metadata: {} },
       { id: 's3', label: 'Pesquisa', value: '3 notas', secondary: 'Em revisão', iconUrl: null, status: 'pending', metadata: {} },
       { id: 's4', label: 'Oficina', value: 'Aberta', secondary: 'Participação livre', iconUrl: null, status: 'active', metadata: {} },
       { id: 's5', label: 'Laboratório', value: '2 ciclos', secondary: 'Fila longa demonstrativa', iconUrl: null, status: 'active', metadata: {} }
     ] }, permissions: {}, metadata: { tags: ['lista','estado'] }, interactions: [], createdAt: now, updatedAt: now },
-    { id: 'focus-timer', type: 'timer', title: 'Tempo', subtitle: 'Sessão', order: 3, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { progress: 68, remaining: '18:20', duration: 30, mode: 'Foco', state: 'paused' }, permissions: {}, metadata: { tags: ['tempo','controle'] }, interactions: [], createdAt: now, updatedAt: now },
-    { id: 'task-list', type: 'tasks', title: 'Tarefas', subtitle: null, order: 4, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { items: [
+    { id: 'time-widget', type: 'timer', title: 'Tempo', subtitle: 'Sessão', order: 3, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { progress: 68, remaining: '18:20', duration: 30, mode: 'Foco', state: 'paused' }, permissions: {}, metadata: { tags: ['tempo','controle'] }, interactions: [], createdAt: now, updatedAt: now },
+    { id: 'tasks-widget', type: 'tasks', title: 'Tarefas', subtitle: null, order: 4, enabled: true, collapsed: false, visibility: 'public', userId: null, status: 'ready', data: { items: [
       { id: 't1', title: 'Revisar painel', completed: true, priority: 'média', assignee: 'Equipe', dueDate: 'Hoje', iconUrl: null },
       { id: 't2', title: 'Organizar referências longas sem quebrar o layout', completed: false, priority: 'alta', assignee: 'Curadoria', dueDate: 'Amanhã', iconUrl: null },
       { id: 't3', title: 'Preparar metadados', completed: false, priority: 'baixa', assignee: 'Dados', dueDate: 'Semana' }
