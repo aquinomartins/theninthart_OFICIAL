@@ -1,6 +1,6 @@
 # The Ninth Art
 
-Site estático da iniciativa **The Ninth Art**, com a experiência interativa Tempo e uma cozinha pública temporal construída em HTML, CSS e JavaScript sem framework.
+Site estático da iniciativa **The Ninth Art**, com a experiência interativa Tempo construída em HTML, CSS e JavaScript sem framework.
 
 ## Estrutura
 
@@ -11,7 +11,7 @@ Site estático da iniciativa **The Ninth Art**, com a experiência interativa Te
 - `styles/`: estilos específicos da experiência Tempo, componentes e motion.
 - `script.js`: interações globais da página inicial, como reveal e carrossel visual.
 - `scripts/tempo.js` e `scripts/experience.js`: inicialização da experiência Tempo.
-- `scripts/modules/`: módulos compartilhados de carrossel, cozinha, estado local, painel admin e motor temporal.
+- `scripts/modules/`: módulos compartilhados de carrossel, estado local, painel admin e motor temporal.
 - `data/`: JSONs consumidos pela experiência.
 - `tempo/images/`: assets públicos atualmente referenciados por HTML e JavaScript.
 - `docs/`: auditoria técnica e relatório de remoções.
