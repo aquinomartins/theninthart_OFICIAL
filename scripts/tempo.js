@@ -1,11 +1,10 @@
 import { assets } from './modules/asset-manifest.js';
 import { createDetailCarousel } from './modules/carousel.js';
-import { renderKitchen } from './modules/kitchen-renderer.js';
 import { initScrollScenes } from './modules/scroll-scenes.js';
 import { initAdminPanel } from './modules/admin-panel.js';
 import { createSession, updateSession, localPersistence } from './modules/state-store.js';
 import { createPublicSnapshot } from './modules/public-state.js';
-import { createSeed, getDominantEra } from './modules/temporal-engine.js';
+import { getDominantEra } from './modules/temporal-engine.js';
 
 const qs = (selector, root = document) => root.querySelector(selector);
 const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -88,7 +87,7 @@ async function boot() {
   hydrateAssetImages();
   initFloatingNarrative();
   initScrollScenes();
-  const dataset = { eras: await loadJson('data/eras.json'), parts: await loadJson('data/machine-parts.json'), objects: await loadJson('data/kitchen-objects.json'), panels: await loadJson('data/story-panels.json') };
+  const dataset = { eras: await loadJson('data/eras.json'), parts: await loadJson('data/machine-parts.json'), objects: await loadJson('data/visual-objects.json'), panels: await loadJson('data/story-panels.json') };
   let publicSnapshot = await localPersistence.loadPublicSnapshot() || createPublicSnapshot(await localPersistence.loadSessions(), dataset.eras);
   let session = restoreFromUrl(dataset) || await localPersistence.loadCurrentSession() || createSession(dataset);
   const credentialRecord = await localPersistence.loadCredentialStatus();
@@ -102,23 +101,13 @@ async function boot() {
     setText('[data-hero-subtitle]', heroLine(dominant, session));
     setText('[data-dominant-label]', `Estado dominante: ${dominant.label} · ${Math.round((session.vector[dominant.id] || 0) * 100)}%`);
     setText('[data-machine-summary]', dataset.parts.filter((part) => session.selectedParts.includes(part.id)).map((part) => part.summary).at(-1) || 'A máquina aguarda uma peça.');
-    setText('[data-mechanism-copy]', `A montagem atual puxa a cozinha para ${dominant.label.toLowerCase()} sem apagar rastros das outras eras.`);
+    setText('[data-mechanism-copy]', `A montagem atual puxa o sistema visual para ${dominant.label.toLowerCase()} sem apagar rastros das outras eras.`);
     setText('[data-vector-readout]', JSON.stringify(session.vector, null, 2));
     setText('[data-state-summary]', `Sua linha: ${session.selectedParts.length} peça(s), ${session.selectedObjects.length} objeto(s), dominante ${dominant.label}.`);
-    setText('[data-public-pulse]', `Cozinha pública: ${Math.round(Math.max(...Object.values(publicSnapshot.vector)) * 100)}% em ${getDominantEra(publicSnapshot.vector, dataset.eras).label}.`);
+    setText('[data-public-pulse]', `Sistema público: ${Math.round(Math.max(...Object.values(publicSnapshot.vector)) * 100)}% em ${getDominantEra(publicSnapshot.vector, dataset.eras).label}.`);
     renderBars(qs('[data-bars="individual"]'), session.vector, dataset.eras);
     renderBars(qs('[data-bars="public"]'), publicSnapshot.vector, dataset.eras);
     renderObjectList(dataset, session);
-    const kitchenScene = qs('[data-kitchen-scene]');
-    if (!kitchenScene) {
-      throw new ExperienceResourceError({
-        resourceId: 'data-kitchen-scene',
-        resourceType: 'dom',
-        essential: true,
-        message: 'O elemento principal da cozinha não foi encontrado.'
-      });
-    }
-    renderKitchen(kitchenScene, qs('[data-kitchen-status]'), dataset, session, publicSnapshot, dominant, createSeed(publicSnapshot));
     renderCredentialState(session.credentialStatus);
     qsa('[data-toggle-tech]').forEach((button) => button.addEventListener('click', () => { const note = qs('[data-tech-note]'); const open = note.hasAttribute('hidden'); note.toggleAttribute('hidden', !open); button.setAttribute('aria-expanded', String(open)); }, { once: true }));
   }
@@ -165,7 +154,7 @@ function renderObjectList(dataset, session) {
   root.innerHTML = dataset.objects.map((object) => {
     const version = object.versions.find((item) => item.eraId === dominant.id) || object.versions[0];
     const selected = session.selectedObjects.includes(object.id);
-    return `<article class="object-card ${selected ? 'is-selected' : ''}"><div class="object-thumb" data-slot="kitchen-object" data-object-id="${object.id}" data-era-id="${version.eraId}">${object.name.slice(0, 2)}</div><h3>${object.name}</h3><p>${object.function}</p><p><strong>${version.label}</strong></p><button type="button" data-toggle-object="${object.id}" aria-pressed="${selected}">${selected ? 'Remover' : 'Selecionar'}</button></article>`;
+    return `<article class="object-card ${selected ? 'is-selected' : ''}"><div class="object-thumb" data-slot="visual-object" data-object-id="${object.id}" data-era-id="${version.eraId}">${object.name.slice(0, 2)}</div><h3>${object.name}</h3><p>${object.function}</p><p><strong>${version.label}</strong></p><button type="button" data-toggle-object="${object.id}" aria-pressed="${selected}">${selected ? 'Remover' : 'Selecionar'}</button></article>`;
   }).join('');
 }
 
@@ -331,115 +320,92 @@ initializeOnce().catch(enableBasicMode);
 function initFloatingNarrative() {
   const flyer = qs('[data-floating-narrative]');
   const layer = flyer?.closest('.floating-narrative-layer');
-  const kitchen = qs('[data-kitchen-scene]');
-  if (!flyer || !layer || !kitchen) return;
+  const destination = qs('[data-floating-destination="visual-system"]') || qs('#visual-system') || qs('.visual-system.section-shell.reveal');
+  if (!flyer || !layer) {
+    console.warn('[Floating guide] Elemento flutuante não encontrado.');
+    return;
+  }
 
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const state = {
-    mode: 'flying',
-    busy: false,
-    savedScroll: 0,
-    lastPose: { x: 0, y: 0, rotation: -8, scale: 1 },
-    startTime: performance.now(),
-    width: 0,
-    height: 0
+  const STATES = {
+    ROAMING: 'ROAMING',
+    EXITING_TO_DESTINATION: 'EXITING_TO_DESTINATION',
+    SCROLLING_TO_DESTINATION: 'SCROLLING_TO_DESTINATION',
+    ENTERING_DESTINATION: 'ENTERING_DESTINATION',
+    ANCHORED_AT_DESTINATION: 'ANCHORED_AT_DESTINATION',
+    EXITING_TO_ORIGIN: 'EXITING_TO_ORIGIN',
+    SCROLLING_TO_ORIGIN: 'SCROLLING_TO_ORIGIN',
+    ENTERING_ORIGIN: 'ENTERING_ORIGIN'
   };
+  const state = { mode: STATES.ROAMING, busy: false, originSnapshot: null, lastPose: { x: 0, y: 0, rotation: -8, scale: 1 }, startTime: performance.now(), width: 0, height: 0, navigationEnabled: Boolean(destination) };
 
-  const setPose = ({ x, y, rotation = -8, scale = 1, opacity = 0.88 }) => {
-    state.lastPose = { x, y, rotation, scale };
-    flyer.style.setProperty('--narrative-x', `${x}px`);
-    flyer.style.setProperty('--narrative-y', `${y}px`);
-    flyer.style.setProperty('--narrative-rotation', `${rotation}deg`);
-    flyer.style.setProperty('--narrative-scale', scale.toFixed(3));
-    flyer.style.opacity = opacity.toFixed(3);
-  };
-
+  const setA11y = (label, pressed = false, busy = false) => { flyer.alt = label; flyer.setAttribute('aria-label', label); flyer.setAttribute('aria-pressed', String(pressed)); flyer.toggleAttribute('aria-busy', busy); };
+  const announce = (message) => { let live = qs('[data-floating-guide-live]'); if (!live) { document.body.insertAdjacentHTML('beforeend', '<span data-floating-guide-live class="sr-only" aria-live="polite"></span>'); live = qs('[data-floating-guide-live]'); } live.textContent = message; };
+  const setPose = ({ x, y, rotation = -8, scale = 1, opacity = 0.88 }) => { state.lastPose = { x, y, rotation, scale }; flyer.style.setProperty('--narrative-x', `${x}px`); flyer.style.setProperty('--narrative-y', `${y}px`); flyer.style.setProperty('--narrative-rotation', `${rotation}deg`); flyer.style.setProperty('--narrative-scale', scale.toFixed(3)); flyer.style.opacity = opacity.toFixed(3); };
+  const safeClamp = (value, min, max) => Math.min(max, Math.max(min, value));
   const organicPose = (now) => {
     const maxScroll = Math.max(1, document.documentElement.scrollHeight - innerHeight);
     const progress = scrollY / maxScroll;
     const box = flyer.getBoundingClientRect();
-    const width = box.width || state.width || 160;
-    const height = box.height || state.height || 160;
+    const width = box.width || state.width || 160; const height = box.height || state.height || 160;
     state.width = width; state.height = height;
-    const t = (now - state.startTime) / 1000;
-    const mobile = matchMedia('(max-width: 767px)').matches;
+    const t = (now - state.startTime) / 1000; const mobile = matchMedia('(max-width: 767px)').matches;
     const baseX = mobile ? innerWidth * (0.62 + progress * 0.16) : innerWidth * (0.08 + progress * 0.64);
     const baseY = mobile ? innerHeight * (0.09 + progress * 0.78) : innerHeight * (0.14 + progress * 0.62);
     const driftX = Math.sin(t * 0.37) * innerWidth * 0.035 + Math.sin(t * 0.113 + 1.8) * innerWidth * 0.026;
     const driftY = Math.cos(t * 0.29 + 0.7) * innerHeight * 0.032 + Math.sin(t * 0.071) * innerHeight * 0.025;
-    return {
-      x: Math.min(innerWidth - width - 12, Math.max(12, baseX + driftX)),
-      y: Math.min(innerHeight - height - 12, Math.max(12, baseY + driftY)),
-      rotation: -6 + Math.sin(t * 0.23) * 7 + Math.cos(t * 0.097) * 3,
-      scale: 1 + Math.sin(t * 0.17) * 0.025,
-      opacity: mobile ? 0.62 : 0.88
-    };
+    return { x: safeClamp(baseX + driftX, 12, innerWidth - width - 12), y: safeClamp(baseY + driftY, 12, innerHeight - height - 12), rotation: -6 + Math.sin(t * 0.23) * 7 + Math.cos(t * 0.097) * 3, scale: 1 + Math.sin(t * 0.17) * 0.025, opacity: mobile ? 0.62 : 0.88 };
   };
-
-  const tick = (now) => {
-    if (state.mode === 'flying' && !state.busy) setPose(organicPose(now));
-    requestAnimationFrame(tick);
-  };
-
+  const tick = (now) => { if (state.mode === STATES.ROAMING && !state.busy && !reduceMotion.matches) setPose(organicPose(now)); requestAnimationFrame(tick); };
   const animatePortal = (direction) => {
-    if (reduceMotion.matches) return Promise.resolve();
-    const sign = direction === 'out' ? 1 : -1;
-    const duration = direction === 'out' ? 640 : 720;
-    const opacity = direction === 'out' ? [0.88, 0.66, 0] : [0, 0.64, 0.88];
-    const scale = direction === 'out' ? [1, 0.72, 0.18] : [0.18, 0.72, 1];
-    const frames = [
-      { transform: `translate3d(var(--narrative-x),var(--narrative-y),0) translate(0,0) rotate(${state.lastPose.rotation}deg) scale(${scale[0]})`, opacity: opacity[0] },
-      { transform: `translate3d(var(--narrative-x),var(--narrative-y),0) translate(${18 * sign}px,${-16 * sign}px) rotate(${state.lastPose.rotation + 115 * sign}deg) scale(${scale[1]})`, opacity: opacity[1], offset: 0.58 },
-      { transform: `translate3d(var(--narrative-x),var(--narrative-y),0) translate(0,0) rotate(${state.lastPose.rotation + 360 * sign}deg) scale(${scale[2]})`, opacity: opacity[2] }
-    ];
-    return flyer.animate(frames, { duration, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'forwards' }).finished;
+    if (reduceMotion.matches) { flyer.style.opacity = direction === 'out' ? '0' : '0.88'; return Promise.resolve(); }
+    const sign = direction === 'out' ? 1 : -1; const duration = direction === 'out' ? 640 : 720;
+    const opacity = direction === 'out' ? [0.88, 0.66, 0] : [0, 0.64, 0.88]; const scale = direction === 'out' ? [1, 0.72, 0.18] : [0.18, 0.72, 1];
+    return flyer.animate([{ transform: `translate3d(var(--narrative-x),var(--narrative-y),0) translate(0,0) rotate(${state.lastPose.rotation}deg) scale(${scale[0]})`, opacity: opacity[0] }, { transform: `translate3d(var(--narrative-x),var(--narrative-y),0) translate(${18 * sign}px,${-16 * sign}px) rotate(${state.lastPose.rotation + 115 * sign}deg) scale(${scale[1]})`, opacity: opacity[1], offset: 0.58 }, { transform: `translate3d(var(--narrative-x),var(--narrative-y),0) translate(0,0) rotate(${state.lastPose.rotation + 360 * sign}deg) scale(${scale[2]})`, opacity: opacity[2] }], { duration, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'forwards' }).finished;
   };
-
-  const dockPose = () => {
-    const rect = kitchen.getBoundingClientRect();
-    const box = flyer.getBoundingClientRect();
-    return { x: rect.left + rect.width * 0.68 - box.width / 2, y: rect.top + rect.height * 0.28 - box.height / 2, rotation: -4, scale: 0.92, opacity: 0.9 };
-  };
-
-  const scrollToY = (top) => new Promise((resolve) => {
-    scrollTo({ top, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
-    if (reduceMotion.matches) { resolve(); return; }
+  const getDestinationScrollTarget = (element) => { const header = qs('[data-site-header]') || qs('header'); const headerHeight = header?.getBoundingClientRect().height || 0; return Math.max(0, element.getBoundingClientRect().top + scrollY - headerHeight - 24); };
+  const waitForScrollEnd = (targetY) => new Promise((resolve) => {
+    let resolved = false;
+    const done = () => { if (resolved) return; resolved = true; window.removeEventListener('scrollend', done); resolve(); };
+    if ('onscrollend' in window) window.addEventListener('scrollend', done, { once: true });
     let stable = 0;
     const check = () => {
-      stable = Math.abs(scrollY - top) < 2 ? stable + 1 : 0;
-      if (stable > 4) resolve(); else requestAnimationFrame(check);
+      if (resolved) return;
+      stable = Math.abs(scrollY - targetY) <= 2 ? stable + 1 : 0;
+      if (stable > 4) done(); else requestAnimationFrame(check);
     };
     check();
   });
-
-  const jump = async () => {
-    if (state.busy) return;
-    state.busy = true;
-    layer.classList.add('is-transitioning');
-    flyer.setAttribute('aria-busy', 'true');
-    const goingToKitchen = state.mode === 'flying';
-    if (goingToKitchen) state.savedScroll = scrollY;
-    await animatePortal('out').catch(() => {});
-    const target = goingToKitchen ? kitchen.getBoundingClientRect().top + scrollY - Math.max(72, innerHeight * 0.12) : state.savedScroll;
-    await scrollToY(Math.max(0, target));
-    setPose(goingToKitchen ? dockPose() : organicPose(performance.now()));
-    await animatePortal('in').catch(() => {});
-    state.mode = goingToKitchen ? 'docked' : 'flying';
-    layer.classList.toggle('is-docked', state.mode === 'docked');
-    flyer.setAttribute('aria-pressed', String(state.mode === 'docked'));
-    flyer.alt = state.mode === 'docked' ? 'Navegador temporal: voltar ao ponto anterior' : 'Navegador temporal: ir para a cozinha pública';
-    flyer.removeAttribute('aria-busy');
-    layer.classList.remove('is-transitioning');
-    state.busy = false;
+  const scrollToY = async (top) => { scrollTo({ top, left: 0, behavior: reduceMotion.matches ? 'auto' : 'smooth' }); await waitForScrollEnd(top); };
+  const destinationPose = () => { const anchor = qs('[data-floating-guide-destination-anchor]', destination) || destination; const rect = anchor.getBoundingClientRect(); const box = flyer.getBoundingClientRect(); return { x: safeClamp(rect.left - box.width / 2, 12, innerWidth - box.width - 12), y: safeClamp(rect.top - box.height / 2, 12, innerHeight - box.height - 12), rotation: -4, scale: 0.92, opacity: 0.9 }; };
+  const restoreSafe = () => { setPose(organicPose(performance.now())); setA11y('Ir para o sistema visual'); layer.classList.remove('is-transitioning'); state.busy = false; state.mode = STATES.ROAMING; };
+  const travelToDestination = async () => {
+    state.originSnapshot = { scrollX, scrollY, viewportWidth: innerWidth, viewportHeight: innerHeight, guideRect: flyer.getBoundingClientRect(), timestamp: Date.now() };
+    state.mode = STATES.EXITING_TO_DESTINATION; setA11y('Indo para o sistema visual', false, true); await animatePortal('out');
+    state.mode = STATES.SCROLLING_TO_DESTINATION; await scrollToY(getDestinationScrollTarget(destination));
+    state.mode = STATES.ENTERING_DESTINATION; setPose(destinationPose()); await animatePortal('in');
+    state.mode = STATES.ANCHORED_AT_DESTINATION; layer.classList.add('is-docked'); setA11y('Voltar ao ponto anterior da página', true); announce('Sistema visual alcançado.');
+    window.dispatchEvent(new CustomEvent('floating-guide-travel-to-visual-system'));
   };
-
+  const returnToOrigin = async () => {
+    const snapshot = state.originSnapshot; state.mode = STATES.EXITING_TO_ORIGIN; setA11y('Indo para o sistema visual', true, true); await animatePortal('out');
+    state.mode = STATES.SCROLLING_TO_ORIGIN; await scrollToY(snapshot.scrollY); window.scrollTo({ top: snapshot.scrollY, left: snapshot.scrollX, behavior: 'auto' });
+    state.mode = STATES.ENTERING_ORIGIN; setPose({ x: snapshot.guideRect.left, y: snapshot.guideRect.top, rotation: state.lastPose.rotation, scale: state.lastPose.scale, opacity: 0.88 }); await animatePortal('in');
+    state.mode = STATES.ROAMING; layer.classList.remove('is-docked'); setA11y('Ir para o sistema visual'); announce('Retorno ao ponto anterior concluído.'); state.originSnapshot = null;
+    window.dispatchEvent(new CustomEvent('floating-guide-return-to-origin'));
+  };
+  const jump = async () => {
+    if (state.busy || !state.navigationEnabled) return;
+    state.busy = true; layer.classList.add('is-transitioning');
+    try { if (state.mode === STATES.ANCHORED_AT_DESTINATION) await returnToOrigin(); else await travelToDestination(); }
+    catch (error) { console.error('[Floating guide] Falha na navegação do elemento flutuante.', error); restoreSafe(); }
+    finally { flyer.removeAttribute('aria-busy'); layer.classList.remove('is-transitioning'); state.busy = false; }
+  };
+  if (!destination) { console.error('[Floating guide] A seção de destino não foi encontrada.'); state.navigationEnabled = false; setA11y('Ir para o sistema visual'); }
   flyer.addEventListener('click', jump);
-  flyer.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      jump();
-    }
-  });
+  flyer.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); jump(); } });
+  addEventListener('resize', () => { if (state.mode === STATES.ANCHORED_AT_DESTINATION && destination) setPose(destinationPose()); });
+  setA11y('Ir para o sistema visual'); if (reduceMotion.matches) setPose({ x: Math.max(12, innerWidth - 140), y: 96, rotation: -6, scale: 1, opacity: 0.72 });
   requestAnimationFrame(tick);
 }
 

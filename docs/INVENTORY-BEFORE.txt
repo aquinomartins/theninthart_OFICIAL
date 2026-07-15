@@ -1,5 +1,5 @@
 ./data/eras.json
-./data/kitchen-objects.json
+./data/visual-objects.json
 ./data/machine-parts.json
 ./data/story-panels.json
 ./docs-inventory-before.txt
@@ -9,7 +9,6 @@
 ./scripts/modules/admin-panel.js
 ./scripts/modules/asset-manifest.js
 ./scripts/modules/carousel.js
-./scripts/modules/kitchen-renderer.js
 ./scripts/modules/public-state.js
 ./scripts/modules/scroll-scenes.js
 ./scripts/modules/state-store.js

@@ -17,7 +17,7 @@
 | `/experience.html` | `experience.html` | `styles.css`, `styles/tempo.css` | `script.js`, `scripts/experience.js` | `data/*.json` | `localStorage` | Restaurada |
 | `/tempo/` | `tempo/index.html` | Nenhum | Nenhum | Nenhum | Nenhum | Compatibilidade |
 
-## Causa da mensagem de modo básico
+## Causa da mensagem de fallback
 
 A mensagem era criada em `scripts/tempo.js` e `scripts/experience.js` no `catch` global de `boot()`. Na página atual, a primeira falha real ocorria quando a inicialização tentava escrever em controles opcionais que não existem no HTML publicado, começando por `[data-hero-subtitle]`.
 
@@ -27,13 +27,13 @@ Cadeia confirmada:
 2. Como o seletor não existe em `index.html` nem em `experience.html`, `querySelector()` retornava `null`.
 3. O acesso a `textContent` gerava `TypeError: Cannot set properties of null (setting 'textContent')`.
 4. A Promise de `boot()` rejeitava.
-5. O `catch` global ativava o modo básico e exibia o aviso vermelho.
+5. O `catch` global ativava o fallback e exibia o aviso vermelho.
 
 Correção aplicada:
 
 - Campos textuais de painéis opcionais agora são atualizados apenas quando existem no DOM.
 - O carrossel de detalhes e a imagem de peça foram classificados como opcionais, então a ausência desses elementos não derruba a experiência global.
-- A cozinha principal (`[data-kitchen-scene]`) permanece essencial e gera `ExperienceResourceError` estruturado se estiver ausente.
+- A antiga seção removida não participa mais da lista crítica; a navegação do elemento flutuante valida localmente o destino `visual-system`.
 - `loadJson()` valida status HTTP, `Content-Type: application/json` e sintaxe do JSON antes de entregar dados essenciais.
 - O fallback mantém diagnóstico técnico no console e mostra uma mensagem segura ao visitante com botão “Tentar novamente”.
 - A inicialização passou a usar uma Promise idempotente para permitir nova tentativa sem duplicar listeners globais.
