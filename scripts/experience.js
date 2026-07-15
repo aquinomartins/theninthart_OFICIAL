@@ -11,8 +11,9 @@ const qs = (selector, root = document) => root.querySelector(selector);
 const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
 
 async function loadJson(path) {
-  const response = await fetch(path);
-  if (!response.ok) throw new Error(`Não foi possível carregar ${path}`);
+  const url = new URL(path, `${window.location.origin}/`);
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Não foi possível carregar ${url.pathname} (${response.status})`);
   return response.json();
 }
 
@@ -199,7 +200,16 @@ function restoreFromUrl(dataset) {
   return createSession(dataset, { parts: parts.length ? parts : ['sequence'], objects: objects.length ? objects : ['forma'] });
 }
 
-boot().catch((error) => { console.error(error); document.body.insertAdjacentHTML('afterbegin', '<p role="alert" style="padding:1rem;background:#401;color:white">A experiência carregou em modo básico porque um recurso falhou.</p>'); });
+boot().catch((error) => {
+  console.error('[Experience fallback]', {
+    resource: error?.message || 'initialization',
+    error,
+    stack: error?.stack,
+    currentPage: window.location.pathname,
+    userAgent: navigator.userAgent
+  });
+  document.body.insertAdjacentHTML('afterbegin', '<p role="alert" style="padding:1rem;background:#401;color:white">A experiência carregou em modo básico porque um recurso essencial falhou. Detalhes no console.</p>');
+});
 
 
 function initFloatingNarrative() {
