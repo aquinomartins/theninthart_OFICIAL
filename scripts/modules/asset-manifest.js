@@ -1,29 +1,29 @@
-const promptPath = 'imagensPrompt/';
+const promptPath = '/tempo/images/';
 
 export const IMAGE_ASSETS = {
-  floatingElement: { src: `${promptPath}imagem01.png`, alt: 'Elemento narrativo voador' },
+  floatingElement: { src: `${promptPath}imagem1.png`, alt: 'Elemento narrativo voador' },
   kitchen: {
-    background: { src: `${promptPath}imagem04.jpg`, alt: 'Plano de fundo ilustrado da cozinha temporal' },
-    architecture: { src: `${promptPath}imagensIntercambiáveis.png`, alt: 'Arquitetura desenhada da cozinha em camada transparente' },
-    table: { src: `${promptPath}itemDeNavegaçãoDoCarrossel01.png`, alt: 'Mesa e utensílios desenhados em primeiro plano' },
-    oven: { src: `${promptPath}itemdenavegaçãoimagensintercambiaveis.png`, alt: 'Módulo de forno e mecanismo em PNG transparente' },
-    props: { src: `${promptPath}imagensIntercambiáveis.png`, alt: 'Objetos intercambiáveis da cozinha temporal' }
+    background: { src: `${promptPath}imagem4.png`, alt: 'Plano de fundo ilustrado da cozinha temporal' },
+    architecture: { src: `${promptPath}imagem013.png`, alt: 'Arquitetura desenhada da cozinha em camada transparente' },
+    table: { src: `${promptPath}imagem010.png`, alt: 'Mesa e utensílios desenhados em primeiro plano' },
+    oven: { src: `${promptPath}imagem014.png`, alt: 'Módulo de forno e mecanismo em PNG transparente' },
+    props: { src: `${promptPath}imagem013.png`, alt: 'Objetos intercambiáveis da cozinha temporal' }
   },
   characters: {
-    hagia: { src: `${promptPath}imagem01.png`, alt: 'Hagia em leitura narrativa' },
-    pio: { src: `${promptPath}itemdenavegaçãoimagensintercambiaveis.png`, alt: 'Pio em deslocamento' },
-    abuela: { src: `${promptPath}itemDeNavegaçãoDoCarrossel01.png`, alt: 'Abuela como memória visual' }
+    hagia: { src: `${promptPath}imagem1.png`, alt: 'Hagia em leitura narrativa' },
+    pio: { src: `${promptPath}imagem014.png`, alt: 'Pio em deslocamento' },
+    abuela: { src: `${promptPath}imagem010.png`, alt: 'Abuela como memória visual' }
   },
   panels: {
-    continuity: { src: `${promptPath}more_hero__gbpl7ki780i2_xlarge.jpg`, alt: 'Vestígios sobre a mesa' },
-    mechanism: { src: `${promptPath}imagensIntercambiáveis.jpg`, alt: 'Mecanismo intercambiável' },
-    coexistence: { src: `${promptPath}imagem04.jpg`, alt: 'Coexistência temporal' },
-    versatility: { src: `${promptPath}versatility_hero__el4o6rn9q24i_xlarge.jpg`, alt: 'Versatilidade do mecanismo' },
-    collective: { src: `${promptPath}imagem02.jpg`, alt: 'Participação coletiva' },
-    speed: { src: `${promptPath}running_5g__5ll87hrde76q_large.jpg`, alt: 'Velocidade narrativa' },
-    coordinated: { src: `${promptPath}running_workout_buddy__cnimtgypraj6_large.jpg`, alt: 'Ação coordenada' },
-    safety: { src: `${promptPath}safety_hero__b23icntx4v36_xlarge.jpg`, alt: 'Coerência temporal' },
-    mechanismsBand: { src: `${promptPath}even_more_apps_01__exq83khgstkm_large.jpg`, alt: 'Mecanismos conectados' }
+    continuity: { src: `${promptPath}imagem018.png`, alt: 'Vestígios sobre a mesa' },
+    mechanism: { src: `${promptPath}imagem013.png`, alt: 'Mecanismo intercambiável' },
+    coexistence: { src: `${promptPath}imagem4.png`, alt: 'Coexistência temporal' },
+    versatility: { src: `${promptPath}imagem015.png`, alt: 'Versatilidade do mecanismo' },
+    collective: { src: `${promptPath}imagem2.png`, alt: 'Participação coletiva' },
+    speed: { src: `${promptPath}hagia1.png`, alt: 'Velocidade narrativa' },
+    coordinated: { src: `${promptPath}Calvin-Hobbes.jpg`, alt: 'Ação coordenada' },
+    safety: { src: `${promptPath}imagem018.png`, alt: 'Coerência temporal' },
+    mechanismsBand: { src: `${promptPath}imagem010.png`, alt: 'Mecanismos conectados' }
   }
 };
 
