@@ -89,7 +89,14 @@
             </button>
           </form>
 
-          <div class="shortcut-grid" data-shortcut-grid aria-label="Atalhos do painel"></div>
+          <div class="shortcut-grid" data-shortcut-grid aria-label="Controles de recursos"></div>
+
+          <nav class="widget-activation-bar" data-widget-activation-bar aria-label="Selecionar painel">
+            <button class="widget-activation-button" type="button" data-widget-activation data-widget-target="comparison-widget" aria-controls="comparison-widget" aria-pressed="false">Comparação</button>
+            <button class="widget-activation-button" type="button" data-widget-activation data-widget-target="states-widget" aria-controls="states-widget" aria-pressed="false">Estados</button>
+            <button class="widget-activation-button" type="button" data-widget-activation data-widget-target="time-widget" aria-controls="time-widget" aria-pressed="false">Tempo</button>
+            <button class="widget-activation-button" type="button" data-widget-activation data-widget-target="tasks-widget" aria-controls="tasks-widget" aria-pressed="false">Tarefas</button>
+          </nav>
 
           <section class="widget-section" data-widget-section aria-labelledby="dashboard-hub-title">
             <header class="widget-section__header">
