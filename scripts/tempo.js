@@ -9,12 +9,79 @@ import { createSeed, getDominantEra } from './modules/temporal-engine.js';
 
 const qs = (selector, root = document) => root.querySelector(selector);
 const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
+let initializationPromise = null;
+let globalEventsBound = false;
+
+class ExperienceResourceError extends Error {
+  constructor({ resourceId, resourceType, url = null, status = null, statusText = '', contentType = '', essential = false, cause = null, message }) {
+    super(message, { cause });
+    this.name = 'ExperienceResourceError';
+    this.resourceId = resourceId;
+    this.resourceType = resourceType;
+    this.url = url;
+    this.status = status;
+    this.statusText = statusText;
+    this.contentType = contentType;
+    this.essential = essential;
+  }
+}
 
 async function loadJson(path) {
-  const url = new URL(path, `${window.location.origin}/`);
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`Não foi possível carregar ${url.pathname} (${response.status})`);
-  return response.json();
+  const url = new URL(path, document.baseURI);
+  let response;
+  try {
+    response = await fetch(url);
+  } catch (error) {
+    throw new ExperienceResourceError({
+      resourceId: path,
+      resourceType: 'json',
+      url: url.href,
+      essential: true,
+      cause: error,
+      message: `Falha de rede ao carregar ${url.pathname}`
+    });
+  }
+  const contentType = response.headers.get('content-type') || '';
+  if (!response.ok) {
+    throw new ExperienceResourceError({
+      resourceId: path,
+      resourceType: 'json',
+      url: url.href,
+      status: response.status,
+      statusText: response.statusText,
+      contentType,
+      essential: true,
+      message: `Falha ao carregar ${url.pathname}: ${response.status} ${response.statusText}`
+    });
+  }
+  if (!contentType.includes('application/json')) {
+    const preview = await response.text();
+    throw new ExperienceResourceError({
+      resourceId: path,
+      resourceType: 'json',
+      url: url.href,
+      status: response.status,
+      statusText: response.statusText,
+      contentType,
+      essential: true,
+      message: `Esperado JSON em ${url.pathname}, mas foi recebido ${contentType}. Início da resposta: ${preview.slice(0, 120)}`
+    });
+  }
+  try {
+    return await response.json();
+  } catch (error) {
+    throw new ExperienceResourceError({
+      resourceId: path,
+      resourceType: 'json',
+      url: url.href,
+      status: response.status,
+      statusText: response.statusText,
+      contentType,
+      essential: true,
+      cause: error,
+      message: `JSON inválido em ${url.pathname}`
+    });
+  }
 }
 
 async function boot() {
@@ -32,23 +99,34 @@ async function boot() {
     const dominant = getDominantEra(session.vector, dataset.eras);
     document.documentElement.style.setProperty('--temporal-accent', dataset.parts.find((part) => session.selectedParts.includes(part.id))?.accent || dominant.theme.accent || '#0a84ff');
     document.body.dataset.dominantEra = dominant.id;
-    qs('[data-hero-subtitle]').textContent = heroLine(dominant, session);
-    qs('[data-dominant-label]').textContent = `Estado dominante: ${dominant.label} · ${Math.round((session.vector[dominant.id] || 0) * 100)}%`;
-    qs('[data-machine-summary]').textContent = dataset.parts.filter((part) => session.selectedParts.includes(part.id)).map((part) => part.summary).at(-1) || 'A máquina aguarda uma peça.';
-    qs('[data-mechanism-copy]').textContent = `A montagem atual puxa a cozinha para ${dominant.label.toLowerCase()} sem apagar rastros das outras eras.`;
-    qs('[data-vector-readout]').textContent = JSON.stringify(session.vector, null, 2);
-    qs('[data-state-summary]').textContent = `Sua linha: ${session.selectedParts.length} peça(s), ${session.selectedObjects.length} objeto(s), dominante ${dominant.label}.`;
-    qs('[data-public-pulse]').textContent = `Cozinha pública: ${Math.round(Math.max(...Object.values(publicSnapshot.vector)) * 100)}% em ${getDominantEra(publicSnapshot.vector, dataset.eras).label}.`;
+    setText('[data-hero-subtitle]', heroLine(dominant, session));
+    setText('[data-dominant-label]', `Estado dominante: ${dominant.label} · ${Math.round((session.vector[dominant.id] || 0) * 100)}%`);
+    setText('[data-machine-summary]', dataset.parts.filter((part) => session.selectedParts.includes(part.id)).map((part) => part.summary).at(-1) || 'A máquina aguarda uma peça.');
+    setText('[data-mechanism-copy]', `A montagem atual puxa a cozinha para ${dominant.label.toLowerCase()} sem apagar rastros das outras eras.`);
+    setText('[data-vector-readout]', JSON.stringify(session.vector, null, 2));
+    setText('[data-state-summary]', `Sua linha: ${session.selectedParts.length} peça(s), ${session.selectedObjects.length} objeto(s), dominante ${dominant.label}.`);
+    setText('[data-public-pulse]', `Cozinha pública: ${Math.round(Math.max(...Object.values(publicSnapshot.vector)) * 100)}% em ${getDominantEra(publicSnapshot.vector, dataset.eras).label}.`);
     renderBars(qs('[data-bars="individual"]'), session.vector, dataset.eras);
     renderBars(qs('[data-bars="public"]'), publicSnapshot.vector, dataset.eras);
     renderObjectList(dataset, session);
-    renderKitchen(qs('[data-kitchen-scene]'), qs('[data-kitchen-status]'), dataset, session, publicSnapshot, dominant, createSeed(publicSnapshot));
+    const kitchenScene = qs('[data-kitchen-scene]');
+    if (!kitchenScene) {
+      throw new ExperienceResourceError({
+        resourceId: 'data-kitchen-scene',
+        resourceType: 'dom',
+        essential: true,
+        message: 'O elemento principal da cozinha não foi encontrado.'
+      });
+    }
+    renderKitchen(kitchenScene, qs('[data-kitchen-status]'), dataset, session, publicSnapshot, dominant, createSeed(publicSnapshot));
     renderCredentialState(session.credentialStatus);
     qsa('[data-toggle-tech]').forEach((button) => button.addEventListener('click', () => { const note = qs('[data-tech-note]'); const open = note.hasAttribute('hidden'); note.toggleAttribute('hidden', !open); button.setAttribute('aria-expanded', String(open)); }, { once: true }));
   }
 
-  createDetailCarousel(qs('[data-machine-carousel]'), dataset.parts, (part, user) => {
-    qs('[data-part-image]').src = assets[part.imageKey] || assets.mechanism;
+  const machineCarousel = qs('[data-machine-carousel]');
+  if (machineCarousel) createDetailCarousel(machineCarousel, dataset.parts, (part, user) => {
+    const partImage = qs('[data-part-image]');
+    if (partImage) partImage.src = assets[part.imageKey] || assets.mechanism;
     if (user && !session.selectedParts.includes(part.id)) {
       session = updateSession(session, dataset, { selectedParts: [...session.selectedParts, part.id].slice(-5) });
       persistAndRender();
@@ -58,11 +136,19 @@ async function boot() {
   });
 
   renderObjectList(dataset, session);
-  bindEvents(dataset, () => session, (next) => { session = next; }, async () => { publicSnapshot = await refreshPublic(dataset); renderAll(); });
+  if (!globalEventsBound) {
+    bindEvents(dataset, () => session, (next) => { session = next; }, async () => { publicSnapshot = await refreshPublic(dataset); renderAll(); });
+    globalEventsBound = true;
+  }
   initAdminPanel({ dialog: qs('[data-admin-dialog]'), dataset, persistence: localPersistence, onRestore: () => location.reload() });
-  qs('[data-open-admin]')?.addEventListener('click', () => qs('[data-admin-dialog]').showModal());
+  qs('[data-open-admin]')?.addEventListener('click', () => qs('[data-admin-dialog]')?.showModal());
 
   await persistAndRender();
+}
+
+function setText(selector, value) {
+  const element = qs(selector);
+  if (element) element.textContent = value;
 }
 
 function hydrateAssetImages() {
@@ -200,16 +286,46 @@ function restoreFromUrl(dataset) {
   return createSession(dataset, { parts: parts.length ? parts : ['sequence'], objects: objects.length ? objects : ['forma'] });
 }
 
-boot().catch((error) => {
-  console.error('[Experience fallback]', {
-    resource: error?.message || 'initialization',
-    error,
+function initializeOnce() {
+  if (!initializationPromise) {
+    initializationPromise = boot().catch((error) => {
+      initializationPromise = null;
+      throw error;
+    });
+  }
+  return initializationPromise;
+}
+
+function enableBasicMode(error) {
+  console.error('[Experience] Falha na inicialização', {
+    name: error?.name,
+    message: error?.message,
     stack: error?.stack,
-    currentPage: window.location.pathname,
-    userAgent: navigator.userAgent
+    cause: error?.cause,
+    pathname: window.location.pathname
   });
-  document.body.insertAdjacentHTML('afterbegin', '<p role="alert" style="padding:1rem;background:#401;color:white">A experiência carregou em modo básico porque um recurso essencial falhou. Detalhes no console.</p>');
-});
+  if (error instanceof ExperienceResourceError) {
+    console.error('[Experience] Recurso essencial falhou', {
+      resourceId: error.resourceId,
+      resourceType: error.resourceType,
+      url: error.url,
+      status: error.status,
+      statusText: error.statusText,
+      contentType: error.contentType,
+      error
+    });
+  }
+  let alert = qs('[data-experience-fallback-alert]');
+  if (!alert) {
+    document.body.insertAdjacentHTML('afterbegin', '<p role="alert" data-experience-fallback-alert style="padding:1rem;background:#401;color:white">Não foi possível carregar uma parte essencial da experiência. Recarregue a página ou tente novamente em instantes. <button type="button" data-experience-retry>Tentar novamente</button></p>');
+    alert = qs('[data-experience-fallback-alert]');
+    qs('[data-experience-retry]', alert)?.addEventListener('click', () => {
+      initializeOnce().then(() => alert?.remove()).catch(enableBasicMode);
+    });
+  }
+}
+
+initializeOnce().catch(enableBasicMode);
 
 
 function initFloatingNarrative() {
