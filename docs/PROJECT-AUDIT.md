@@ -19,23 +19,25 @@
 
 ## Causa da mensagem de modo básico
 
-A mensagem era criada em `scripts/tempo.js` e `scripts/experience.js` no `catch` global de `boot()`. A implementação anterior ocultava a origem real do erro e exibia apenas “A experiência carregou em modo básico porque um recurso falhou.”.
+A mensagem era criada em `scripts/tempo.js` e `scripts/experience.js` no `catch` global de `boot()`. Na página atual, a primeira falha real ocorria quando a inicialização tentava escrever em controles opcionais que não existem no HTML publicado, começando por `[data-hero-subtitle]`.
 
-Problemas encontrados:
+Cadeia confirmada:
 
-1. O menu apontava para `experience.html`, mas o arquivo não existia, causando 404 na navegação.
-2. A rota `/tempo/` não tinha `index.html`, deixando a URL publicada insegura.
-3. O manifesto de assets apontava para a pasta inexistente `imagensPrompt/`, gerando imagens quebradas.
-4. `loadJson()` usava caminhos relativos (`data/...`), o que quebraria dados quando a experiência fosse carregada por uma rota de subdiretório.
+1. `renderAll()` executava `qs('[data-hero-subtitle]').textContent = ...`.
+2. Como o seletor não existe em `index.html` nem em `experience.html`, `querySelector()` retornava `null`.
+3. O acesso a `textContent` gerava `TypeError: Cannot set properties of null (setting 'textContent')`.
+4. A Promise de `boot()` rejeitava.
+5. O `catch` global ativava o modo básico e exibia o aviso vermelho.
 
 Correção aplicada:
 
-- `asset-manifest.js` agora referencia imagens existentes em `/tempo/images/`.
-- O elemento flutuante no HTML usa `/tempo/images/imagem1.png`.
-- `loadJson()` resolve dados a partir da origem do site.
-- O `catch` global registra recurso, erro, stack, página e user agent antes de exibir fallback.
-- `experience.html` foi restaurado como entrada direta.
-- `tempo/index.html` foi criado como rota de compatibilidade.
+- Campos textuais de painéis opcionais agora são atualizados apenas quando existem no DOM.
+- O carrossel de detalhes e a imagem de peça foram classificados como opcionais, então a ausência desses elementos não derruba a experiência global.
+- A cozinha principal (`[data-kitchen-scene]`) permanece essencial e gera `ExperienceResourceError` estruturado se estiver ausente.
+- `loadJson()` valida status HTTP, `Content-Type: application/json` e sintaxe do JSON antes de entregar dados essenciais.
+- O fallback mantém diagnóstico técnico no console e mostra uma mensagem segura ao visitante com botão “Tentar novamente”.
+- A inicialização passou a usar uma Promise idempotente para permitir nova tentativa sem duplicar listeners globais.
+- Não há service worker no projeto; portanto, nenhuma lista de precache ou estratégia de cache foi alterada.
 
 ## Inventário resumido
 
