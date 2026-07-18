@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pending-operation.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "payload",
+    "sessionRevision",
+    "idempotencyKey",
+    "attempts",
+    "createdAt",
+    "updatedAt",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "controls-update",
+        "widget-update",
+        "story-run-create",
+        "event-batch"
+      ]
+    },
+    "payload": {},
+    "sessionRevision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "idempotencyKey": {
+      "type": "string"
+    },
+    "attempts": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "sending",
+        "failed",
+        "conflict"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "title": "Pending operation",
+  "description": "Offline-safe pending persistence operation."
+}

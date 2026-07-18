@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "story-sync-state.schema.json",
+  "type": "object",
+  "required": [
+    "status",
+    "pendingOperations"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "local",
+        "pending",
+        "syncing",
+        "synced",
+        "conflict",
+        "offline",
+        "error"
+      ]
+    },
+    "pendingOperations": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lastSyncedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lastError": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "title": "Story sync state",
+  "description": "Public synchronization status payload."
+}
