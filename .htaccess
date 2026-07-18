@@ -1,0 +1,43 @@
+Options -Indexes
+RewriteEngine On
+
+# HTTPS opcional e compatível com proxy/cPanel. Ative definindo TNA_FORCE_HTTPS=1 no ambiente Apache.
+RewriteCond %{ENV:TNA_FORCE_HTTPS} =1
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Nunca exponha arquivos internos, credenciais ou artefatos de build.
+<FilesMatch "(^\.env|^\.git|config\.php$|config\.example\.php$|composer\.(json|lock)$|package(-lock)?\.json$|angular\.json$|tsconfig.*\.json$|README.*\.(md|txt)$)">
+    Require all denied
+</FilesMatch>
+
+RedirectMatch 404 ^/(\.git|logs|backups|database|frontend|tests|scripts-build|release|server)(/|$)
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html?)$">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </FilesMatch>
+    <FilesMatch "\.(json)$">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </FilesMatch>
+    <FilesMatch "^.*-[A-Za-z0-9_-]{8,}\.(js|css)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    <FilesMatch "\.(png|jpe?g|gif|webp|avif|svg|ico)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType application/javascript .js .mjs
+    AddType text/css .css
+    AddType application/json .json
+    AddType image/webp .webp
+    AddType image/avif .avif
+    AddType image/svg+xml .svg
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript text/javascript application/json image/svg+xml
+</IfModule>
