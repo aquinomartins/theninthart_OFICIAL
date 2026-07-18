@@ -1,1 +1,2 @@
 :host{display:block}.story-engine-root{display:block}.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}@media (prefers-reduced-motion:reduce){*{transition-duration:0ms!important}}
+.story-sync-status{margin:.5rem 0 0;color:var(--muted-text,#6f6a61);font-size:.85rem;letter-spacing:.01em}

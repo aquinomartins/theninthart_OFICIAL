@@ -1,0 +1,1 @@
+import{Injectable}from'@angular/core';@Injectable({providedIn:'root'})export class IntegrationEventsService{emit(name:string,detail:Record<string,unknown>={}){window.dispatchEvent(new CustomEvent(name,{detail:{source:'angular',...detail,timestamp:Date.now()}}))}}
