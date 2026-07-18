@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/story-control.schema.json",
+  "title": "Controle narrativo",
+  "description": "Contrato de um controle binário.",
+  "type": "object",
+  "required": [
+    "id",
+    "position",
+    "familyId",
+    "familyLabel",
+    "title",
+    "shortTitle",
+    "description",
+    "enabled",
+    "defaultValue",
+    "controlType",
+    "tags",
+    "narrativeAxes",
+    "affectedQuadrants",
+    "conflicts",
+    "synergies",
+    "futureFunction",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 32
+    },
+    "familyId": {
+      "enum": [
+        "machine-parts",
+        "world-time",
+        "kitchen-culture",
+        "atmosphere-meaning"
+      ]
+    },
+    "familyLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shortTitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "defaultValue": {
+      "type": "boolean"
+    },
+    "controlType": {
+      "const": "switch"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "narrativeAxes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "affectedQuadrants": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 29
+      },
+      "uniqueItems": true
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "synergies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "futureFunction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

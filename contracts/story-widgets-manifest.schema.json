@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/story-widgets-manifest.schema.json",
+  "title": "Widgets narrativos",
+  "description": "Manifesto canônico de widgets narrativos.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "manifestVersion",
+    "locale",
+    "generatedAt",
+    "items"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "manifestVersion": {
+      "type": "string"
+    },
+    "locale": {
+      "const": "pt-BR"
+    },
+    "generatedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "$ref": "story-widget.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

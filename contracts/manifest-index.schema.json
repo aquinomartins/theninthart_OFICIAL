@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/manifest-index.schema.json",
+  "title": "Índice de manifestos",
+  "description": "Catálogo de dados e contratos.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "manifestVersion",
+    "locale",
+    "generatedAt",
+    "manifests",
+    "contracts",
+    "metadata"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "manifestVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locale": {
+      "const": "pt-BR"
+    },
+    "generatedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "manifests": {
+      "type": "object"
+    },
+    "contracts": {
+      "type": "object"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestVersion": "1.0.0",
+  "locale": "pt-BR",
+  "generatedAt": null,
+  "manifests": {
+    "controls": {
+      "path": "/data/story-controls.json",
+      "count": 32
+    },
+    "widgets": {
+      "path": "/data/story-widgets.json",
+      "count": 4
+    },
+    "versions": {
+      "path": "/data/story-versions.json",
+      "count": 7
+    },
+    "quadrants": {
+      "path": "/data/quadrants.json",
+      "count": 29
+    },
+    "slots": {
+      "path": "/data/quadrant-slots.json",
+      "count": 203
+    }
+  },
+  "contracts": {
+    "common": "/contracts/common.schema.json",
+    "quadrant-slot": "/contracts/quadrant-slot.schema.json",
+    "quadrant-slots-manifest": "/contracts/quadrant-slots-manifest.schema.json",
+    "quadrant": "/contracts/quadrant.schema.json",
+    "quadrants-manifest": "/contracts/quadrants-manifest.schema.json",
+    "resolved-story-state": "/contracts/resolved-story-state.schema.json",
+    "story-control": "/contracts/story-control.schema.json",
+    "story-controls-manifest": "/contracts/story-controls-manifest.schema.json",
+    "story-input-state": "/contracts/story-input-state.schema.json",
+    "story-version": "/contracts/story-version.schema.json",
+    "story-versions-manifest": "/contracts/story-versions-manifest.schema.json",
+    "story-widget": "/contracts/story-widget.schema.json",
+    "story-widgets-manifest": "/contracts/story-widgets-manifest.schema.json"
+  },
+  "metadata": {}
+}

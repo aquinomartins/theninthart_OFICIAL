@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/common.schema.json",
+  "title": "Contratos comuns",
+  "description": "Definições reutilizáveis.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "manifestVersion",
+    "locale",
+    "generatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "manifestVersion": {
+      "type": "string"
+    },
+    "locale": {
+      "const": "pt-BR"
+    },
+    "generatedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "metadata": {
+      "type": "object"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manifestHeader": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "manifestVersion": {
+          "type": "string"
+        },
+        "locale": {
+          "const": "pt-BR"
+        },
+        "generatedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "metadata": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
