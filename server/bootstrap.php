@@ -7,6 +7,7 @@ use Tna\Controller\BootstrapController;
 use Tna\Controller\HealthController;
 use Tna\Controller\PublicStateController;
 use Tna\Controller\SessionController;
+use Tna\Controller\StoryRunController;
 use Tna\Database\ConnectionFactory;
 use Tna\Database\TransactionManager;
 use Tna\Http\ErrorHandler;
@@ -24,6 +25,7 @@ use Tna\Service\BootstrapService;
 use Tna\Service\HealthService;
 use Tna\Service\PublicStateService;
 use Tna\Service\SessionService;
+use Tna\Service\StoryRunService;
 
 $autoload = __DIR__ . '/vendor/autoload.php';
 if (is_file($autoload)) {
@@ -76,6 +78,10 @@ try {
     $router->get('/v1/sessions/{sessionId}', [$sessionController, 'get']);
     $router->put('/v1/sessions/{sessionId}/controls', [$sessionController, 'controls']);
     $router->put('/v1/sessions/{sessionId}/widgets/{widgetId}', [$sessionController, 'widget']);
+    $storyRunController = new StoryRunController(new StoryRunService(new TransactionManager($connectionFactory)), $clock);
+    $router->post('/v1/story-runs', [$storyRunController, 'create']);
+    $router->get('/v1/story-runs/{storyRunId}', [$storyRunController, 'get']);
+    $router->post('/v1/events/batch', [$storyRunController, 'eventsBatch']);
 
     $router->dispatch($request)->send();
 } catch (Throwable $throwable) {
