@@ -6,7 +6,9 @@ use Tna\Config\DatabaseConfig;
 use Tna\Controller\BootstrapController;
 use Tna\Controller\HealthController;
 use Tna\Controller\PublicStateController;
+use Tna\Controller\SessionController;
 use Tna\Database\ConnectionFactory;
+use Tna\Database\TransactionManager;
 use Tna\Http\ErrorHandler;
 use Tna\Http\Request;
 use Tna\Http\Router;
@@ -21,6 +23,7 @@ use Tna\Support\Logger;
 use Tna\Service\BootstrapService;
 use Tna\Service\HealthService;
 use Tna\Service\PublicStateService;
+use Tna\Service\SessionService;
 
 $autoload = __DIR__ . '/vendor/autoload.php';
 if (is_file($autoload)) {
@@ -68,6 +71,11 @@ try {
     $router->get('/v1/health', new HealthController(new HealthService($connectionFactory, $migrationsPath), $clock));
     $router->get('/v1/bootstrap', new BootstrapController(new BootstrapService($connectionFactory), $clock));
     $router->get('/v1/public-state', new PublicStateController(new PublicStateService($connectionFactory), $clock));
+    $sessionController = new SessionController(new SessionService(new TransactionManager($connectionFactory), $clock), $clock);
+    $router->post('/v1/sessions', [$sessionController, 'create']);
+    $router->get('/v1/sessions/{sessionId}', [$sessionController, 'get']);
+    $router->put('/v1/sessions/{sessionId}/controls', [$sessionController, 'controls']);
+    $router->put('/v1/sessions/{sessionId}/widgets/{widgetId}', [$sessionController, 'widget']);
 
     $router->dispatch($request)->send();
 } catch (Throwable $throwable) {
