@@ -5,8 +5,10 @@ namespace Tna\Http;
 
 class ApiException extends \RuntimeException
 {
-    public function __construct(private readonly int $statusCode, string $message)
-    {
+    public function __construct(
+        private readonly int $statusCode,
+        string $message
+    ) {
         parent::__construct($message);
     }
 
