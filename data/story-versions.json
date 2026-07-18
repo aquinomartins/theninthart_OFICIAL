@@ -1,0 +1,807 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestVersion": "1.0.0",
+  "locale": "pt-BR",
+  "generatedAt": null,
+  "items": [
+    {
+      "id": "v01",
+      "versionNumber": 1,
+      "position": 1,
+      "title": "A Tapioca do T-Rex",
+      "shortTitle": "A Tapioca do T-Rex",
+      "description": "Família narrativa canônica, flexível e combinável com escolhas participativas.",
+      "enabled": true,
+      "temporalProfile": {
+        "dominantEra": "past",
+        "past": 0.9,
+        "present": 0.05,
+        "future": 0.05,
+        "period": "deep-prehistory"
+      },
+      "worldProfile": {
+        "setting": "deep-prehistory",
+        "motifs": [
+          "mandioca",
+          "tapioca",
+          "prehistoria-terrestre"
+        ]
+      },
+      "machineProfile": {
+        "state": "unstable",
+        "motifs": [
+          "mandioca"
+        ]
+      },
+      "kitchenProfile": {
+        "foods": [
+          "mandioca",
+          "tapioca"
+        ],
+        "mode": "participatory"
+      },
+      "threatProfile": {
+        "type": "contextual",
+        "intensity": 0.65
+      },
+      "emotionalProfile": {
+        "humor": 0.7,
+        "wonder": 0.7,
+        "danger": 0.35,
+        "melancholy": 0.35,
+        "tenderness": 0.35,
+        "suspense": 0.35
+      },
+      "residueProfile": {
+        "items": [
+          "dente",
+          "osso",
+          "pegada",
+          "planta impossível"
+        ]
+      },
+      "titlePatterns": [
+        "A Tapioca do T-Rex",
+        "{world}: {residue}"
+      ],
+      "abuelaLineThemes": [
+        "memória",
+        "humor",
+        "ambiguidade"
+      ],
+      "requiredTags": [],
+      "preferredTags": [
+        "mandioca",
+        "tapioca",
+        "prehistoria-terrestre"
+      ],
+      "excludedTags": [],
+      "defaultWidgetConfiguration": {
+        "timeline": {
+          "dominant-era": "past",
+          "specific-period": "deep-prehistory",
+          "displacement-intensity": 50,
+          "temporal-duration": 50,
+          "temporal-direction": "backward",
+          "paradox-level": 50
+        },
+        "public-kitchen": {
+          "indigenous-matrix": 50,
+          "african-matrix": 50,
+          "portuguese-matrix": 50,
+          "hybrid-matrix": 50,
+          "dominant-food": "mandioca",
+          "dominant-utensil": "panela-barro",
+          "individual-weight": 50,
+          "public-weight": 50,
+          "memory-intensity": 50
+        },
+        "machine-state": {
+          "stability": 50,
+          "integrity": 50,
+          "error-rate": 50,
+          "displaced-part": "engrenagem-vegetal",
+          "anomaly-type": "mechanical",
+          "noise-level": 50,
+          "rupture-probability": 50,
+          "temporal-coherence": 50
+        },
+        "dramatic-climate": {
+          "humor": 50,
+          "wonder": 50,
+          "suspense": 50,
+          "danger": 50,
+          "melancholy": 50,
+          "emotional-intensity": 50,
+          "life-death-balance": 50,
+          "imagination-reality-balance": 50
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "v02",
+      "versionNumber": 2,
+      "position": 2,
+      "title": "O Ovo no Céu Antigo",
+      "shortTitle": "O Ovo no Céu Antigo",
+      "description": "Família narrativa canônica, flexível e combinável com escolhas participativas.",
+      "enabled": true,
+      "temporalProfile": {
+        "dominantEra": "past",
+        "past": 0.9,
+        "present": 0.05,
+        "future": 0.05,
+        "period": "deep-prehistory"
+      },
+      "worldProfile": {
+        "setting": "deep-prehistory",
+        "motifs": [
+          "milho",
+          "bolo",
+          "prehistoria-aerea"
+        ]
+      },
+      "machineProfile": {
+        "state": "unstable",
+        "motifs": [
+          "milho"
+        ]
+      },
+      "kitchenProfile": {
+        "foods": [
+          "milho",
+          "bolo"
+        ],
+        "mode": "participatory"
+      },
+      "threatProfile": {
+        "type": "contextual",
+        "intensity": 0.65
+      },
+      "emotionalProfile": {
+        "humor": 0.7,
+        "wonder": 0.7,
+        "danger": 0.35,
+        "melancholy": 0.35,
+        "tenderness": 0.35,
+        "suspense": 0.35
+      },
+      "residueProfile": {
+        "items": [
+          "pena",
+          "ovo",
+          "sombra no céu"
+        ]
+      },
+      "titlePatterns": [
+        "O Ovo no Céu Antigo",
+        "{world}: {residue}"
+      ],
+      "abuelaLineThemes": [
+        "memória",
+        "humor",
+        "ambiguidade"
+      ],
+      "requiredTags": [],
+      "preferredTags": [
+        "milho",
+        "bolo",
+        "prehistoria-aerea"
+      ],
+      "excludedTags": [],
+      "defaultWidgetConfiguration": {
+        "timeline": {
+          "dominant-era": "past",
+          "specific-period": "deep-prehistory",
+          "displacement-intensity": 50,
+          "temporal-duration": 50,
+          "temporal-direction": "backward",
+          "paradox-level": 50
+        },
+        "public-kitchen": {
+          "indigenous-matrix": 50,
+          "african-matrix": 50,
+          "portuguese-matrix": 50,
+          "hybrid-matrix": 50,
+          "dominant-food": "mandioca",
+          "dominant-utensil": "panela-barro",
+          "individual-weight": 50,
+          "public-weight": 50,
+          "memory-intensity": 50
+        },
+        "machine-state": {
+          "stability": 50,
+          "integrity": 50,
+          "error-rate": 50,
+          "displaced-part": "engrenagem-vegetal",
+          "anomaly-type": "mechanical",
+          "noise-level": 50,
+          "rupture-probability": 50,
+          "temporal-coherence": 50
+        },
+        "dramatic-climate": {
+          "humor": 50,
+          "wonder": 50,
+          "suspense": 50,
+          "danger": 50,
+          "melancholy": 50,
+          "emotional-intensity": 50,
+          "life-death-balance": 50,
+          "imagination-reality-balance": 50
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "v03",
+      "versionNumber": 3,
+      "position": 3,
+      "title": "Forno 3000",
+      "shortTitle": "Forno 3000",
+      "description": "Família narrativa canônica, flexível e combinável com escolhas participativas.",
+      "enabled": true,
+      "temporalProfile": {
+        "dominantEra": "future",
+        "past": 0.05,
+        "present": 0.05,
+        "future": 0.9,
+        "period": "distant-future"
+      },
+      "worldProfile": {
+        "setting": "distant-future",
+        "motifs": [
+          "bolo",
+          "futuro-urbano",
+          "sensor-brasas"
+        ]
+      },
+      "machineProfile": {
+        "state": "unstable",
+        "motifs": [
+          "bolo"
+        ]
+      },
+      "kitchenProfile": {
+        "foods": [
+          "bolo"
+        ],
+        "mode": "participatory"
+      },
+      "threatProfile": {
+        "type": "contextual",
+        "intensity": 0.65
+      },
+      "emotionalProfile": {
+        "humor": 0.7,
+        "wonder": 0.7,
+        "danger": 0.35,
+        "melancholy": 0.35,
+        "tenderness": 0.35,
+        "suspense": 0.35
+      },
+      "residueProfile": {
+        "items": [
+          "sensor",
+          "peça futura",
+          "fragmento de robô"
+        ]
+      },
+      "titlePatterns": [
+        "Forno 3000",
+        "{world}: {residue}"
+      ],
+      "abuelaLineThemes": [
+        "memória",
+        "humor",
+        "ambiguidade"
+      ],
+      "requiredTags": [],
+      "preferredTags": [
+        "bolo",
+        "futuro-urbano",
+        "sensor-brasas"
+      ],
+      "excludedTags": [],
+      "defaultWidgetConfiguration": {
+        "timeline": {
+          "dominant-era": "past",
+          "specific-period": "deep-prehistory",
+          "displacement-intensity": 50,
+          "temporal-duration": 50,
+          "temporal-direction": "backward",
+          "paradox-level": 50
+        },
+        "public-kitchen": {
+          "indigenous-matrix": 50,
+          "african-matrix": 50,
+          "portuguese-matrix": 50,
+          "hybrid-matrix": 50,
+          "dominant-food": "mandioca",
+          "dominant-utensil": "panela-barro",
+          "individual-weight": 50,
+          "public-weight": 50,
+          "memory-intensity": 50
+        },
+        "machine-state": {
+          "stability": 50,
+          "integrity": 50,
+          "error-rate": 50,
+          "displaced-part": "engrenagem-vegetal",
+          "anomaly-type": "mechanical",
+          "noise-level": 50,
+          "rupture-probability": 50,
+          "temporal-coherence": 50
+        },
+        "dramatic-climate": {
+          "humor": 50,
+          "wonder": 50,
+          "suspense": 50,
+          "danger": 50,
+          "melancholy": 50,
+          "emotional-intensity": 50,
+          "life-death-balance": 50,
+          "imagination-reality-balance": 50
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "v04",
+      "versionNumber": 4,
+      "position": 4,
+      "title": "A Cozinha das Três Raízes",
+      "shortTitle": "A Cozinha das Três Raízes",
+      "description": "Família narrativa canônica, flexível e combinável com escolhas participativas.",
+      "enabled": true,
+      "temporalProfile": {
+        "dominantEra": "past",
+        "past": 0.9,
+        "present": 0.05,
+        "future": 0.05,
+        "period": "historical-ancestral"
+      },
+      "worldProfile": {
+        "setting": "historical-ancestral",
+        "motifs": [
+          "mandioca",
+          "bolo",
+          "traco-indigena",
+          "traco-afro-portugues"
+        ]
+      },
+      "machineProfile": {
+        "state": "unstable",
+        "motifs": [
+          "mandioca"
+        ]
+      },
+      "kitchenProfile": {
+        "foods": [
+          "mandioca",
+          "bolo"
+        ],
+        "mode": "participatory"
+      },
+      "threatProfile": {
+        "type": "contextual",
+        "intensity": 0.65
+      },
+      "emotionalProfile": {
+        "humor": 0.7,
+        "wonder": 0.7,
+        "danger": 0.35,
+        "melancholy": 0.35,
+        "tenderness": 0.35,
+        "suspense": 0.35
+      },
+      "residueProfile": {
+        "items": [
+          "colher antiga",
+          "erva deslocada",
+          "fumaça ritual"
+        ]
+      },
+      "titlePatterns": [
+        "A Cozinha das Três Raízes",
+        "{world}: {residue}"
+      ],
+      "abuelaLineThemes": [
+        "memória",
+        "humor",
+        "ambiguidade"
+      ],
+      "requiredTags": [],
+      "preferredTags": [
+        "mandioca",
+        "bolo",
+        "traco-indigena",
+        "traco-afro-portugues"
+      ],
+      "excludedTags": [],
+      "defaultWidgetConfiguration": {
+        "timeline": {
+          "dominant-era": "past",
+          "specific-period": "deep-prehistory",
+          "displacement-intensity": 50,
+          "temporal-duration": 50,
+          "temporal-direction": "backward",
+          "paradox-level": 50
+        },
+        "public-kitchen": {
+          "indigenous-matrix": 50,
+          "african-matrix": 50,
+          "portuguese-matrix": 50,
+          "hybrid-matrix": 50,
+          "dominant-food": "mandioca",
+          "dominant-utensil": "panela-barro",
+          "individual-weight": 50,
+          "public-weight": 50,
+          "memory-intensity": 50
+        },
+        "machine-state": {
+          "stability": 50,
+          "integrity": 50,
+          "error-rate": 50,
+          "displaced-part": "engrenagem-vegetal",
+          "anomaly-type": "mechanical",
+          "noise-level": 50,
+          "rupture-probability": 50,
+          "temporal-coherence": 50
+        },
+        "dramatic-climate": {
+          "humor": 50,
+          "wonder": 50,
+          "suspense": 50,
+          "danger": 50,
+          "melancholy": 50,
+          "emotional-intensity": 50,
+          "life-death-balance": 50,
+          "imagination-reality-balance": 50
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "v05",
+      "versionNumber": 5,
+      "position": 5,
+      "title": "A Panela que Cantava",
+      "shortTitle": "A Panela que Cantava",
+      "description": "Família narrativa canônica, flexível e combinável com escolhas participativas.",
+      "enabled": true,
+      "temporalProfile": {
+        "dominantEra": "past",
+        "past": 0.9,
+        "present": 0.05,
+        "future": 0.05,
+        "period": "enchanted-past"
+      },
+      "worldProfile": {
+        "setting": "enchanted-past",
+        "motifs": [
+          "tapioca",
+          "bolo",
+          "panela-barro"
+        ]
+      },
+      "machineProfile": {
+        "state": "unstable",
+        "motifs": [
+          "tapioca"
+        ]
+      },
+      "kitchenProfile": {
+        "foods": [
+          "tapioca",
+          "bolo"
+        ],
+        "mode": "participatory"
+      },
+      "threatProfile": {
+        "type": "contextual",
+        "intensity": 0.65
+      },
+      "emotionalProfile": {
+        "humor": 0.7,
+        "wonder": 0.7,
+        "danger": 0.35,
+        "melancholy": 0.35,
+        "tenderness": 0.35,
+        "suspense": 0.35
+      },
+      "residueProfile": {
+        "items": [
+          "folha sonora",
+          "barro luminoso",
+          "canto residual"
+        ]
+      },
+      "titlePatterns": [
+        "A Panela que Cantava",
+        "{world}: {residue}"
+      ],
+      "abuelaLineThemes": [
+        "memória",
+        "humor",
+        "ambiguidade"
+      ],
+      "requiredTags": [],
+      "preferredTags": [
+        "tapioca",
+        "bolo",
+        "panela-barro"
+      ],
+      "excludedTags": [],
+      "defaultWidgetConfiguration": {
+        "timeline": {
+          "dominant-era": "past",
+          "specific-period": "deep-prehistory",
+          "displacement-intensity": 50,
+          "temporal-duration": 50,
+          "temporal-direction": "backward",
+          "paradox-level": 50
+        },
+        "public-kitchen": {
+          "indigenous-matrix": 50,
+          "african-matrix": 50,
+          "portuguese-matrix": 50,
+          "hybrid-matrix": 50,
+          "dominant-food": "mandioca",
+          "dominant-utensil": "panela-barro",
+          "individual-weight": 50,
+          "public-weight": 50,
+          "memory-intensity": 50
+        },
+        "machine-state": {
+          "stability": 50,
+          "integrity": 50,
+          "error-rate": 50,
+          "displaced-part": "engrenagem-vegetal",
+          "anomaly-type": "mechanical",
+          "noise-level": 50,
+          "rupture-probability": 50,
+          "temporal-coherence": 50
+        },
+        "dramatic-climate": {
+          "humor": 50,
+          "wonder": 50,
+          "suspense": 50,
+          "danger": 50,
+          "melancholy": 50,
+          "emotional-intensity": 50,
+          "life-death-balance": 50,
+          "imagination-reality-balance": 50
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "v06",
+      "versionNumber": 6,
+      "position": 6,
+      "title": "A Cozinha em Curto-Circuito",
+      "shortTitle": "A Cozinha em Curto-Circuito",
+      "description": "Família narrativa canônica, flexível e combinável com escolhas participativas.",
+      "enabled": true,
+      "temporalProfile": {
+        "dominantEra": "present",
+        "past": 0.05,
+        "present": 0.9,
+        "future": 0.05,
+        "period": "expanded-present"
+      },
+      "worldProfile": {
+        "setting": "expanded-present",
+        "motifs": [
+          "bolo",
+          "presente-expandido",
+          "paradoxo-temporal"
+        ]
+      },
+      "machineProfile": {
+        "state": "unstable",
+        "motifs": [
+          "bolo"
+        ]
+      },
+      "kitchenProfile": {
+        "foods": [
+          "bolo"
+        ],
+        "mode": "participatory"
+      },
+      "threatProfile": {
+        "type": "contextual",
+        "intensity": 0.65
+      },
+      "emotionalProfile": {
+        "humor": 0.7,
+        "wonder": 0.7,
+        "danger": 0.35,
+        "melancholy": 0.35,
+        "tenderness": 0.35,
+        "suspense": 0.35
+      },
+      "residueProfile": {
+        "items": [
+          "talher impossível",
+          "sombra mecânica",
+          "marca no forno"
+        ]
+      },
+      "titlePatterns": [
+        "A Cozinha em Curto-Circuito",
+        "{world}: {residue}"
+      ],
+      "abuelaLineThemes": [
+        "memória",
+        "humor",
+        "ambiguidade"
+      ],
+      "requiredTags": [],
+      "preferredTags": [
+        "bolo",
+        "presente-expandido",
+        "paradoxo-temporal"
+      ],
+      "excludedTags": [],
+      "defaultWidgetConfiguration": {
+        "timeline": {
+          "dominant-era": "past",
+          "specific-period": "deep-prehistory",
+          "displacement-intensity": 50,
+          "temporal-duration": 50,
+          "temporal-direction": "backward",
+          "paradox-level": 50
+        },
+        "public-kitchen": {
+          "indigenous-matrix": 50,
+          "african-matrix": 50,
+          "portuguese-matrix": 50,
+          "hybrid-matrix": 50,
+          "dominant-food": "mandioca",
+          "dominant-utensil": "panela-barro",
+          "individual-weight": 50,
+          "public-weight": 50,
+          "memory-intensity": 50
+        },
+        "machine-state": {
+          "stability": 50,
+          "integrity": 50,
+          "error-rate": 50,
+          "displaced-part": "engrenagem-vegetal",
+          "anomaly-type": "mechanical",
+          "noise-level": 50,
+          "rupture-probability": 50,
+          "temporal-coherence": 50
+        },
+        "dramatic-climate": {
+          "humor": 50,
+          "wonder": 50,
+          "suspense": 50,
+          "danger": 50,
+          "melancholy": 50,
+          "emotional-intensity": 50,
+          "life-death-balance": 50,
+          "imagination-reality-balance": 50
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "v07",
+      "versionNumber": 7,
+      "position": 7,
+      "title": "Saudade no Ano 3000",
+      "shortTitle": "Saudade no Ano 3000",
+      "description": "Família narrativa canônica, flexível e combinável com escolhas participativas.",
+      "enabled": true,
+      "temporalProfile": {
+        "dominantEra": "future",
+        "past": 0.05,
+        "present": 0.05,
+        "future": 0.9,
+        "period": "distant-future"
+      },
+      "worldProfile": {
+        "setting": "distant-future",
+        "motifs": [
+          "bolo",
+          "futuro-distopico",
+          "melancolia"
+        ]
+      },
+      "machineProfile": {
+        "state": "unstable",
+        "motifs": [
+          "bolo"
+        ]
+      },
+      "kitchenProfile": {
+        "foods": [
+          "bolo"
+        ],
+        "mode": "participatory"
+      },
+      "threatProfile": {
+        "type": "contextual",
+        "intensity": 0.65
+      },
+      "emotionalProfile": {
+        "humor": 0.7,
+        "wonder": 0.7,
+        "danger": 0.35,
+        "melancholy": 0.35,
+        "tenderness": 0.35,
+        "suspense": 0.35
+      },
+      "residueProfile": {
+        "items": [
+          "peça enterrada",
+          "cozinha vazia",
+          "fotografia",
+          "objeto impossível"
+        ]
+      },
+      "titlePatterns": [
+        "Saudade no Ano 3000",
+        "{world}: {residue}"
+      ],
+      "abuelaLineThemes": [
+        "memória",
+        "humor",
+        "ambiguidade"
+      ],
+      "requiredTags": [],
+      "preferredTags": [
+        "bolo",
+        "futuro-distopico",
+        "melancolia"
+      ],
+      "excludedTags": [],
+      "defaultWidgetConfiguration": {
+        "timeline": {
+          "dominant-era": "past",
+          "specific-period": "deep-prehistory",
+          "displacement-intensity": 50,
+          "temporal-duration": 50,
+          "temporal-direction": "backward",
+          "paradox-level": 50
+        },
+        "public-kitchen": {
+          "indigenous-matrix": 50,
+          "african-matrix": 50,
+          "portuguese-matrix": 50,
+          "hybrid-matrix": 50,
+          "dominant-food": "mandioca",
+          "dominant-utensil": "panela-barro",
+          "individual-weight": 50,
+          "public-weight": 50,
+          "memory-intensity": 50
+        },
+        "machine-state": {
+          "stability": 50,
+          "integrity": 50,
+          "error-rate": 50,
+          "displaced-part": "engrenagem-vegetal",
+          "anomaly-type": "mechanical",
+          "noise-level": 50,
+          "rupture-probability": 50,
+          "temporal-coherence": 50
+        },
+        "dramatic-climate": {
+          "humor": 50,
+          "wonder": 50,
+          "suspense": 50,
+          "danger": 50,
+          "melancholy": 50,
+          "emotional-intensity": 50,
+          "life-death-balance": 50,
+          "imagination-reality-balance": 50
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}

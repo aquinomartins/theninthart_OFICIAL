@@ -1,0 +1,5083 @@
+{
+    "schemaVersion": "1.0.0",
+    "manifestVersion": "1.0.0",
+    "locale": "pt-BR",
+    "generatedAt": null,
+    "items": [
+        {
+            "id": "q01-v01",
+            "slotId": "q01-v01",
+            "quadrantId": "q01",
+            "quadrantNumber": 1,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 1,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q01/v01/q01-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 01, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q01-v02",
+            "slotId": "q01-v02",
+            "quadrantId": "q01",
+            "quadrantNumber": 1,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 2,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q01/v02/q01-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 01, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q01-v03",
+            "slotId": "q01-v03",
+            "quadrantId": "q01",
+            "quadrantNumber": 1,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 3,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q01/v03/q01-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 01, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q01-v04",
+            "slotId": "q01-v04",
+            "quadrantId": "q01",
+            "quadrantNumber": 1,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 4,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q01/v04/q01-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 01, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q01-v05",
+            "slotId": "q01-v05",
+            "quadrantId": "q01",
+            "quadrantNumber": 1,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 5,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q01/v05/q01-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 01, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q01-v06",
+            "slotId": "q01-v06",
+            "quadrantId": "q01",
+            "quadrantNumber": 1,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 6,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q01/v06/q01-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 01, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q01-v07",
+            "slotId": "q01-v07",
+            "quadrantId": "q01",
+            "quadrantNumber": 1,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 7,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q01/v07/q01-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 01, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q02-v01",
+            "slotId": "q02-v01",
+            "quadrantId": "q02",
+            "quadrantNumber": 2,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 8,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q02/v01/q02-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 02, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q02-v02",
+            "slotId": "q02-v02",
+            "quadrantId": "q02",
+            "quadrantNumber": 2,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 9,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q02/v02/q02-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 02, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q02-v03",
+            "slotId": "q02-v03",
+            "quadrantId": "q02",
+            "quadrantNumber": 2,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 10,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q02/v03/q02-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 02, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q02-v04",
+            "slotId": "q02-v04",
+            "quadrantId": "q02",
+            "quadrantNumber": 2,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 11,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q02/v04/q02-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 02, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q02-v05",
+            "slotId": "q02-v05",
+            "quadrantId": "q02",
+            "quadrantNumber": 2,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 12,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q02/v05/q02-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 02, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q02-v06",
+            "slotId": "q02-v06",
+            "quadrantId": "q02",
+            "quadrantNumber": 2,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 13,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q02/v06/q02-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 02, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q02-v07",
+            "slotId": "q02-v07",
+            "quadrantId": "q02",
+            "quadrantNumber": 2,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 14,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q02/v07/q02-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 02, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q03-v01",
+            "slotId": "q03-v01",
+            "quadrantId": "q03",
+            "quadrantNumber": 3,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 15,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q03/v01/q03-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 03, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q03-v02",
+            "slotId": "q03-v02",
+            "quadrantId": "q03",
+            "quadrantNumber": 3,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 16,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q03/v02/q03-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 03, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q03-v03",
+            "slotId": "q03-v03",
+            "quadrantId": "q03",
+            "quadrantNumber": 3,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 17,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q03/v03/q03-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 03, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q03-v04",
+            "slotId": "q03-v04",
+            "quadrantId": "q03",
+            "quadrantNumber": 3,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 18,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q03/v04/q03-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 03, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q03-v05",
+            "slotId": "q03-v05",
+            "quadrantId": "q03",
+            "quadrantNumber": 3,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 19,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q03/v05/q03-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 03, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q03-v06",
+            "slotId": "q03-v06",
+            "quadrantId": "q03",
+            "quadrantNumber": 3,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 20,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q03/v06/q03-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 03, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q03-v07",
+            "slotId": "q03-v07",
+            "quadrantId": "q03",
+            "quadrantNumber": 3,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 21,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q03/v07/q03-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 03, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q04-v01",
+            "slotId": "q04-v01",
+            "quadrantId": "q04",
+            "quadrantNumber": 4,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 22,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q04/v01/q04-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 04, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q04-v02",
+            "slotId": "q04-v02",
+            "quadrantId": "q04",
+            "quadrantNumber": 4,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 23,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q04/v02/q04-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 04, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q04-v03",
+            "slotId": "q04-v03",
+            "quadrantId": "q04",
+            "quadrantNumber": 4,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 24,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q04/v03/q04-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 04, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q04-v04",
+            "slotId": "q04-v04",
+            "quadrantId": "q04",
+            "quadrantNumber": 4,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 25,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q04/v04/q04-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 04, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q04-v05",
+            "slotId": "q04-v05",
+            "quadrantId": "q04",
+            "quadrantNumber": 4,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 26,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q04/v05/q04-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 04, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q04-v06",
+            "slotId": "q04-v06",
+            "quadrantId": "q04",
+            "quadrantNumber": 4,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 27,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q04/v06/q04-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 04, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q04-v07",
+            "slotId": "q04-v07",
+            "quadrantId": "q04",
+            "quadrantNumber": 4,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 28,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q04/v07/q04-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 04, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q05-v01",
+            "slotId": "q05-v01",
+            "quadrantId": "q05",
+            "quadrantNumber": 5,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 29,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q05/v01/q05-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 05, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q05-v02",
+            "slotId": "q05-v02",
+            "quadrantId": "q05",
+            "quadrantNumber": 5,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 30,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q05/v02/q05-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 05, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q05-v03",
+            "slotId": "q05-v03",
+            "quadrantId": "q05",
+            "quadrantNumber": 5,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 31,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q05/v03/q05-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 05, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q05-v04",
+            "slotId": "q05-v04",
+            "quadrantId": "q05",
+            "quadrantNumber": 5,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 32,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q05/v04/q05-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 05, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q05-v05",
+            "slotId": "q05-v05",
+            "quadrantId": "q05",
+            "quadrantNumber": 5,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 33,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q05/v05/q05-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 05, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q05-v06",
+            "slotId": "q05-v06",
+            "quadrantId": "q05",
+            "quadrantNumber": 5,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 34,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q05/v06/q05-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 05, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q05-v07",
+            "slotId": "q05-v07",
+            "quadrantId": "q05",
+            "quadrantNumber": 5,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 35,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q05/v07/q05-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 05, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q06-v01",
+            "slotId": "q06-v01",
+            "quadrantId": "q06",
+            "quadrantNumber": 6,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 36,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q06/v01/q06-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 06, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q06-v02",
+            "slotId": "q06-v02",
+            "quadrantId": "q06",
+            "quadrantNumber": 6,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 37,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q06/v02/q06-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 06, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q06-v03",
+            "slotId": "q06-v03",
+            "quadrantId": "q06",
+            "quadrantNumber": 6,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 38,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q06/v03/q06-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 06, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q06-v04",
+            "slotId": "q06-v04",
+            "quadrantId": "q06",
+            "quadrantNumber": 6,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 39,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q06/v04/q06-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 06, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q06-v05",
+            "slotId": "q06-v05",
+            "quadrantId": "q06",
+            "quadrantNumber": 6,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 40,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q06/v05/q06-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 06, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q06-v06",
+            "slotId": "q06-v06",
+            "quadrantId": "q06",
+            "quadrantNumber": 6,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 41,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q06/v06/q06-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 06, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q06-v07",
+            "slotId": "q06-v07",
+            "quadrantId": "q06",
+            "quadrantNumber": 6,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 42,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q06/v07/q06-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 06, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q07-v01",
+            "slotId": "q07-v01",
+            "quadrantId": "q07",
+            "quadrantNumber": 7,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 43,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q07/v01/q07-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 07, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q07-v02",
+            "slotId": "q07-v02",
+            "quadrantId": "q07",
+            "quadrantNumber": 7,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 44,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q07/v02/q07-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 07, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q07-v03",
+            "slotId": "q07-v03",
+            "quadrantId": "q07",
+            "quadrantNumber": 7,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 45,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q07/v03/q07-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 07, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q07-v04",
+            "slotId": "q07-v04",
+            "quadrantId": "q07",
+            "quadrantNumber": 7,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 46,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q07/v04/q07-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 07, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q07-v05",
+            "slotId": "q07-v05",
+            "quadrantId": "q07",
+            "quadrantNumber": 7,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 47,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q07/v05/q07-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 07, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q07-v06",
+            "slotId": "q07-v06",
+            "quadrantId": "q07",
+            "quadrantNumber": 7,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 48,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q07/v06/q07-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 07, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q07-v07",
+            "slotId": "q07-v07",
+            "quadrantId": "q07",
+            "quadrantNumber": 7,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 49,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q07/v07/q07-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 07, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q08-v01",
+            "slotId": "q08-v01",
+            "quadrantId": "q08",
+            "quadrantNumber": 8,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 50,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q08/v01/q08-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 08, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q08-v02",
+            "slotId": "q08-v02",
+            "quadrantId": "q08",
+            "quadrantNumber": 8,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 51,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q08/v02/q08-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 08, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q08-v03",
+            "slotId": "q08-v03",
+            "quadrantId": "q08",
+            "quadrantNumber": 8,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 52,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q08/v03/q08-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 08, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q08-v04",
+            "slotId": "q08-v04",
+            "quadrantId": "q08",
+            "quadrantNumber": 8,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 53,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q08/v04/q08-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 08, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q08-v05",
+            "slotId": "q08-v05",
+            "quadrantId": "q08",
+            "quadrantNumber": 8,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 54,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q08/v05/q08-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 08, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q08-v06",
+            "slotId": "q08-v06",
+            "quadrantId": "q08",
+            "quadrantNumber": 8,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 55,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q08/v06/q08-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 08, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q08-v07",
+            "slotId": "q08-v07",
+            "quadrantId": "q08",
+            "quadrantNumber": 8,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 56,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q08/v07/q08-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 08, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q09-v01",
+            "slotId": "q09-v01",
+            "quadrantId": "q09",
+            "quadrantNumber": 9,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 57,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q09/v01/q09-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 09, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q09-v02",
+            "slotId": "q09-v02",
+            "quadrantId": "q09",
+            "quadrantNumber": 9,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 58,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q09/v02/q09-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 09, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q09-v03",
+            "slotId": "q09-v03",
+            "quadrantId": "q09",
+            "quadrantNumber": 9,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 59,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q09/v03/q09-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 09, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q09-v04",
+            "slotId": "q09-v04",
+            "quadrantId": "q09",
+            "quadrantNumber": 9,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 60,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q09/v04/q09-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 09, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q09-v05",
+            "slotId": "q09-v05",
+            "quadrantId": "q09",
+            "quadrantNumber": 9,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 61,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q09/v05/q09-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 09, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q09-v06",
+            "slotId": "q09-v06",
+            "quadrantId": "q09",
+            "quadrantNumber": 9,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 62,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q09/v06/q09-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 09, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q09-v07",
+            "slotId": "q09-v07",
+            "quadrantId": "q09",
+            "quadrantNumber": 9,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 63,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q09/v07/q09-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 09, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q10-v01",
+            "slotId": "q10-v01",
+            "quadrantId": "q10",
+            "quadrantNumber": 10,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 64,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q10/v01/q10-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 10, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q10-v02",
+            "slotId": "q10-v02",
+            "quadrantId": "q10",
+            "quadrantNumber": 10,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 65,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q10/v02/q10-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 10, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q10-v03",
+            "slotId": "q10-v03",
+            "quadrantId": "q10",
+            "quadrantNumber": 10,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 66,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q10/v03/q10-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 10, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q10-v04",
+            "slotId": "q10-v04",
+            "quadrantId": "q10",
+            "quadrantNumber": 10,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 67,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q10/v04/q10-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 10, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q10-v05",
+            "slotId": "q10-v05",
+            "quadrantId": "q10",
+            "quadrantNumber": 10,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 68,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q10/v05/q10-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 10, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q10-v06",
+            "slotId": "q10-v06",
+            "quadrantId": "q10",
+            "quadrantNumber": 10,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 69,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q10/v06/q10-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 10, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q10-v07",
+            "slotId": "q10-v07",
+            "quadrantId": "q10",
+            "quadrantNumber": 10,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 70,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q10/v07/q10-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 10, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q11-v01",
+            "slotId": "q11-v01",
+            "quadrantId": "q11",
+            "quadrantNumber": 11,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 71,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q11/v01/q11-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 11, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q11-v02",
+            "slotId": "q11-v02",
+            "quadrantId": "q11",
+            "quadrantNumber": 11,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 72,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q11/v02/q11-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 11, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q11-v03",
+            "slotId": "q11-v03",
+            "quadrantId": "q11",
+            "quadrantNumber": 11,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 73,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q11/v03/q11-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 11, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q11-v04",
+            "slotId": "q11-v04",
+            "quadrantId": "q11",
+            "quadrantNumber": 11,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 74,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q11/v04/q11-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 11, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q11-v05",
+            "slotId": "q11-v05",
+            "quadrantId": "q11",
+            "quadrantNumber": 11,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 75,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q11/v05/q11-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 11, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q11-v06",
+            "slotId": "q11-v06",
+            "quadrantId": "q11",
+            "quadrantNumber": 11,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 76,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q11/v06/q11-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 11, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q11-v07",
+            "slotId": "q11-v07",
+            "quadrantId": "q11",
+            "quadrantNumber": 11,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 77,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q11/v07/q11-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 11, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q12-v01",
+            "slotId": "q12-v01",
+            "quadrantId": "q12",
+            "quadrantNumber": 12,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 78,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q12/v01/q12-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 12, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q12-v02",
+            "slotId": "q12-v02",
+            "quadrantId": "q12",
+            "quadrantNumber": 12,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 79,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q12/v02/q12-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 12, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q12-v03",
+            "slotId": "q12-v03",
+            "quadrantId": "q12",
+            "quadrantNumber": 12,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 80,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q12/v03/q12-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 12, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q12-v04",
+            "slotId": "q12-v04",
+            "quadrantId": "q12",
+            "quadrantNumber": 12,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 81,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q12/v04/q12-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 12, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q12-v05",
+            "slotId": "q12-v05",
+            "quadrantId": "q12",
+            "quadrantNumber": 12,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 82,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q12/v05/q12-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 12, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q12-v06",
+            "slotId": "q12-v06",
+            "quadrantId": "q12",
+            "quadrantNumber": 12,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 83,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q12/v06/q12-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 12, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q12-v07",
+            "slotId": "q12-v07",
+            "quadrantId": "q12",
+            "quadrantNumber": 12,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 84,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q12/v07/q12-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 12, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q13-v01",
+            "slotId": "q13-v01",
+            "quadrantId": "q13",
+            "quadrantNumber": 13,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 85,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q13/v01/q13-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 13, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q13-v02",
+            "slotId": "q13-v02",
+            "quadrantId": "q13",
+            "quadrantNumber": 13,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 86,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q13/v02/q13-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 13, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q13-v03",
+            "slotId": "q13-v03",
+            "quadrantId": "q13",
+            "quadrantNumber": 13,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 87,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q13/v03/q13-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 13, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q13-v04",
+            "slotId": "q13-v04",
+            "quadrantId": "q13",
+            "quadrantNumber": 13,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 88,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q13/v04/q13-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 13, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q13-v05",
+            "slotId": "q13-v05",
+            "quadrantId": "q13",
+            "quadrantNumber": 13,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 89,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q13/v05/q13-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 13, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q13-v06",
+            "slotId": "q13-v06",
+            "quadrantId": "q13",
+            "quadrantNumber": 13,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 90,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q13/v06/q13-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 13, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q13-v07",
+            "slotId": "q13-v07",
+            "quadrantId": "q13",
+            "quadrantNumber": 13,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 91,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q13/v07/q13-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 13, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q14-v01",
+            "slotId": "q14-v01",
+            "quadrantId": "q14",
+            "quadrantNumber": 14,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 92,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q14/v01/q14-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 14, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q14-v02",
+            "slotId": "q14-v02",
+            "quadrantId": "q14",
+            "quadrantNumber": 14,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 93,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q14/v02/q14-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 14, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q14-v03",
+            "slotId": "q14-v03",
+            "quadrantId": "q14",
+            "quadrantNumber": 14,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 94,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q14/v03/q14-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 14, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q14-v04",
+            "slotId": "q14-v04",
+            "quadrantId": "q14",
+            "quadrantNumber": 14,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 95,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q14/v04/q14-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 14, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q14-v05",
+            "slotId": "q14-v05",
+            "quadrantId": "q14",
+            "quadrantNumber": 14,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 96,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q14/v05/q14-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 14, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q14-v06",
+            "slotId": "q14-v06",
+            "quadrantId": "q14",
+            "quadrantNumber": 14,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 97,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q14/v06/q14-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 14, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q14-v07",
+            "slotId": "q14-v07",
+            "quadrantId": "q14",
+            "quadrantNumber": 14,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 98,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q14/v07/q14-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 14, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q15-v01",
+            "slotId": "q15-v01",
+            "quadrantId": "q15",
+            "quadrantNumber": 15,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 99,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q15/v01/q15-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 15, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q15-v02",
+            "slotId": "q15-v02",
+            "quadrantId": "q15",
+            "quadrantNumber": 15,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 100,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q15/v02/q15-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 15, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q15-v03",
+            "slotId": "q15-v03",
+            "quadrantId": "q15",
+            "quadrantNumber": 15,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 101,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q15/v03/q15-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 15, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q15-v04",
+            "slotId": "q15-v04",
+            "quadrantId": "q15",
+            "quadrantNumber": 15,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 102,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q15/v04/q15-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 15, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q15-v05",
+            "slotId": "q15-v05",
+            "quadrantId": "q15",
+            "quadrantNumber": 15,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 103,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q15/v05/q15-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 15, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q15-v06",
+            "slotId": "q15-v06",
+            "quadrantId": "q15",
+            "quadrantNumber": 15,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 104,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q15/v06/q15-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 15, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q15-v07",
+            "slotId": "q15-v07",
+            "quadrantId": "q15",
+            "quadrantNumber": 15,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 105,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q15/v07/q15-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 15, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q16-v01",
+            "slotId": "q16-v01",
+            "quadrantId": "q16",
+            "quadrantNumber": 16,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 106,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q16/v01/q16-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 16, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q16-v02",
+            "slotId": "q16-v02",
+            "quadrantId": "q16",
+            "quadrantNumber": 16,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 107,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q16/v02/q16-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 16, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q16-v03",
+            "slotId": "q16-v03",
+            "quadrantId": "q16",
+            "quadrantNumber": 16,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 108,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q16/v03/q16-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 16, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q16-v04",
+            "slotId": "q16-v04",
+            "quadrantId": "q16",
+            "quadrantNumber": 16,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 109,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q16/v04/q16-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 16, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q16-v05",
+            "slotId": "q16-v05",
+            "quadrantId": "q16",
+            "quadrantNumber": 16,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 110,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q16/v05/q16-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 16, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q16-v06",
+            "slotId": "q16-v06",
+            "quadrantId": "q16",
+            "quadrantNumber": 16,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 111,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q16/v06/q16-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 16, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q16-v07",
+            "slotId": "q16-v07",
+            "quadrantId": "q16",
+            "quadrantNumber": 16,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 112,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q16/v07/q16-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 16, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q17-v01",
+            "slotId": "q17-v01",
+            "quadrantId": "q17",
+            "quadrantNumber": 17,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 113,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q17/v01/q17-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 17, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q17-v02",
+            "slotId": "q17-v02",
+            "quadrantId": "q17",
+            "quadrantNumber": 17,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 114,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q17/v02/q17-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 17, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q17-v03",
+            "slotId": "q17-v03",
+            "quadrantId": "q17",
+            "quadrantNumber": 17,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 115,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q17/v03/q17-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 17, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q17-v04",
+            "slotId": "q17-v04",
+            "quadrantId": "q17",
+            "quadrantNumber": 17,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 116,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q17/v04/q17-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 17, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q17-v05",
+            "slotId": "q17-v05",
+            "quadrantId": "q17",
+            "quadrantNumber": 17,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 117,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q17/v05/q17-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 17, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q17-v06",
+            "slotId": "q17-v06",
+            "quadrantId": "q17",
+            "quadrantNumber": 17,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 118,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q17/v06/q17-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 17, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q17-v07",
+            "slotId": "q17-v07",
+            "quadrantId": "q17",
+            "quadrantNumber": 17,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 119,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q17/v07/q17-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 17, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q18-v01",
+            "slotId": "q18-v01",
+            "quadrantId": "q18",
+            "quadrantNumber": 18,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 120,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q18/v01/q18-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 18, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q18-v02",
+            "slotId": "q18-v02",
+            "quadrantId": "q18",
+            "quadrantNumber": 18,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 121,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q18/v02/q18-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 18, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q18-v03",
+            "slotId": "q18-v03",
+            "quadrantId": "q18",
+            "quadrantNumber": 18,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 122,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q18/v03/q18-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 18, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q18-v04",
+            "slotId": "q18-v04",
+            "quadrantId": "q18",
+            "quadrantNumber": 18,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 123,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q18/v04/q18-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 18, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q18-v05",
+            "slotId": "q18-v05",
+            "quadrantId": "q18",
+            "quadrantNumber": 18,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 124,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q18/v05/q18-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 18, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q18-v06",
+            "slotId": "q18-v06",
+            "quadrantId": "q18",
+            "quadrantNumber": 18,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 125,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q18/v06/q18-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 18, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q18-v07",
+            "slotId": "q18-v07",
+            "quadrantId": "q18",
+            "quadrantNumber": 18,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 126,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q18/v07/q18-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 18, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q19-v01",
+            "slotId": "q19-v01",
+            "quadrantId": "q19",
+            "quadrantNumber": 19,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 127,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q19/v01/q19-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 19, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q19-v02",
+            "slotId": "q19-v02",
+            "quadrantId": "q19",
+            "quadrantNumber": 19,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 128,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q19/v02/q19-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 19, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q19-v03",
+            "slotId": "q19-v03",
+            "quadrantId": "q19",
+            "quadrantNumber": 19,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 129,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q19/v03/q19-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 19, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q19-v04",
+            "slotId": "q19-v04",
+            "quadrantId": "q19",
+            "quadrantNumber": 19,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 130,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q19/v04/q19-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 19, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q19-v05",
+            "slotId": "q19-v05",
+            "quadrantId": "q19",
+            "quadrantNumber": 19,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 131,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q19/v05/q19-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 19, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q19-v06",
+            "slotId": "q19-v06",
+            "quadrantId": "q19",
+            "quadrantNumber": 19,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 132,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q19/v06/q19-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 19, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q19-v07",
+            "slotId": "q19-v07",
+            "quadrantId": "q19",
+            "quadrantNumber": 19,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 133,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q19/v07/q19-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 19, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q20-v01",
+            "slotId": "q20-v01",
+            "quadrantId": "q20",
+            "quadrantNumber": 20,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 134,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q20/v01/q20-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 20, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q20-v02",
+            "slotId": "q20-v02",
+            "quadrantId": "q20",
+            "quadrantNumber": 20,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 135,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q20/v02/q20-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 20, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q20-v03",
+            "slotId": "q20-v03",
+            "quadrantId": "q20",
+            "quadrantNumber": 20,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 136,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q20/v03/q20-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 20, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q20-v04",
+            "slotId": "q20-v04",
+            "quadrantId": "q20",
+            "quadrantNumber": 20,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 137,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q20/v04/q20-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 20, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q20-v05",
+            "slotId": "q20-v05",
+            "quadrantId": "q20",
+            "quadrantNumber": 20,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 138,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q20/v05/q20-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 20, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q20-v06",
+            "slotId": "q20-v06",
+            "quadrantId": "q20",
+            "quadrantNumber": 20,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 139,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q20/v06/q20-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 20, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q20-v07",
+            "slotId": "q20-v07",
+            "quadrantId": "q20",
+            "quadrantNumber": 20,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 140,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q20/v07/q20-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 20, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q21-v01",
+            "slotId": "q21-v01",
+            "quadrantId": "q21",
+            "quadrantNumber": 21,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 141,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q21/v01/q21-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 21, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q21-v02",
+            "slotId": "q21-v02",
+            "quadrantId": "q21",
+            "quadrantNumber": 21,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 142,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q21/v02/q21-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 21, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q21-v03",
+            "slotId": "q21-v03",
+            "quadrantId": "q21",
+            "quadrantNumber": 21,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 143,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q21/v03/q21-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 21, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q21-v04",
+            "slotId": "q21-v04",
+            "quadrantId": "q21",
+            "quadrantNumber": 21,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 144,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q21/v04/q21-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 21, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q21-v05",
+            "slotId": "q21-v05",
+            "quadrantId": "q21",
+            "quadrantNumber": 21,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 145,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q21/v05/q21-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 21, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q21-v06",
+            "slotId": "q21-v06",
+            "quadrantId": "q21",
+            "quadrantNumber": 21,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 146,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q21/v06/q21-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 21, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q21-v07",
+            "slotId": "q21-v07",
+            "quadrantId": "q21",
+            "quadrantNumber": 21,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 147,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q21/v07/q21-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 21, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q22-v01",
+            "slotId": "q22-v01",
+            "quadrantId": "q22",
+            "quadrantNumber": 22,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 148,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q22/v01/q22-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 22, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q22-v02",
+            "slotId": "q22-v02",
+            "quadrantId": "q22",
+            "quadrantNumber": 22,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 149,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q22/v02/q22-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 22, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q22-v03",
+            "slotId": "q22-v03",
+            "quadrantId": "q22",
+            "quadrantNumber": 22,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 150,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q22/v03/q22-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 22, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q22-v04",
+            "slotId": "q22-v04",
+            "quadrantId": "q22",
+            "quadrantNumber": 22,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 151,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q22/v04/q22-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 22, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q22-v05",
+            "slotId": "q22-v05",
+            "quadrantId": "q22",
+            "quadrantNumber": 22,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 152,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q22/v05/q22-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 22, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q22-v06",
+            "slotId": "q22-v06",
+            "quadrantId": "q22",
+            "quadrantNumber": 22,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 153,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q22/v06/q22-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 22, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q22-v07",
+            "slotId": "q22-v07",
+            "quadrantId": "q22",
+            "quadrantNumber": 22,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 154,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q22/v07/q22-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 22, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q23-v01",
+            "slotId": "q23-v01",
+            "quadrantId": "q23",
+            "quadrantNumber": 23,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 155,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q23/v01/q23-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 23, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q23-v02",
+            "slotId": "q23-v02",
+            "quadrantId": "q23",
+            "quadrantNumber": 23,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 156,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q23/v02/q23-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 23, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q23-v03",
+            "slotId": "q23-v03",
+            "quadrantId": "q23",
+            "quadrantNumber": 23,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 157,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q23/v03/q23-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 23, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q23-v04",
+            "slotId": "q23-v04",
+            "quadrantId": "q23",
+            "quadrantNumber": 23,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 158,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q23/v04/q23-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 23, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q23-v05",
+            "slotId": "q23-v05",
+            "quadrantId": "q23",
+            "quadrantNumber": 23,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 159,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q23/v05/q23-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 23, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q23-v06",
+            "slotId": "q23-v06",
+            "quadrantId": "q23",
+            "quadrantNumber": 23,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 160,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q23/v06/q23-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 23, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q23-v07",
+            "slotId": "q23-v07",
+            "quadrantId": "q23",
+            "quadrantNumber": 23,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 161,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q23/v07/q23-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 23, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q24-v01",
+            "slotId": "q24-v01",
+            "quadrantId": "q24",
+            "quadrantNumber": 24,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 162,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q24/v01/q24-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 24, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q24-v02",
+            "slotId": "q24-v02",
+            "quadrantId": "q24",
+            "quadrantNumber": 24,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 163,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q24/v02/q24-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 24, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q24-v03",
+            "slotId": "q24-v03",
+            "quadrantId": "q24",
+            "quadrantNumber": 24,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 164,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q24/v03/q24-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 24, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q24-v04",
+            "slotId": "q24-v04",
+            "quadrantId": "q24",
+            "quadrantNumber": 24,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 165,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q24/v04/q24-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 24, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q24-v05",
+            "slotId": "q24-v05",
+            "quadrantId": "q24",
+            "quadrantNumber": 24,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 166,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q24/v05/q24-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 24, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q24-v06",
+            "slotId": "q24-v06",
+            "quadrantId": "q24",
+            "quadrantNumber": 24,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 167,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q24/v06/q24-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 24, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q24-v07",
+            "slotId": "q24-v07",
+            "quadrantId": "q24",
+            "quadrantNumber": 24,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 168,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q24/v07/q24-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 24, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q25-v01",
+            "slotId": "q25-v01",
+            "quadrantId": "q25",
+            "quadrantNumber": 25,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 169,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q25/v01/q25-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 25, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q25-v02",
+            "slotId": "q25-v02",
+            "quadrantId": "q25",
+            "quadrantNumber": 25,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 170,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q25/v02/q25-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 25, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q25-v03",
+            "slotId": "q25-v03",
+            "quadrantId": "q25",
+            "quadrantNumber": 25,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 171,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q25/v03/q25-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 25, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q25-v04",
+            "slotId": "q25-v04",
+            "quadrantId": "q25",
+            "quadrantNumber": 25,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 172,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q25/v04/q25-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 25, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q25-v05",
+            "slotId": "q25-v05",
+            "quadrantId": "q25",
+            "quadrantNumber": 25,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 173,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q25/v05/q25-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 25, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q25-v06",
+            "slotId": "q25-v06",
+            "quadrantId": "q25",
+            "quadrantNumber": 25,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 174,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q25/v06/q25-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 25, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q25-v07",
+            "slotId": "q25-v07",
+            "quadrantId": "q25",
+            "quadrantNumber": 25,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 175,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q25/v07/q25-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 25, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q26-v01",
+            "slotId": "q26-v01",
+            "quadrantId": "q26",
+            "quadrantNumber": 26,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 176,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q26/v01/q26-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 26, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q26-v02",
+            "slotId": "q26-v02",
+            "quadrantId": "q26",
+            "quadrantNumber": 26,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 177,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q26/v02/q26-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 26, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q26-v03",
+            "slotId": "q26-v03",
+            "quadrantId": "q26",
+            "quadrantNumber": 26,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 178,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q26/v03/q26-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 26, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q26-v04",
+            "slotId": "q26-v04",
+            "quadrantId": "q26",
+            "quadrantNumber": 26,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 179,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q26/v04/q26-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 26, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q26-v05",
+            "slotId": "q26-v05",
+            "quadrantId": "q26",
+            "quadrantNumber": 26,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 180,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q26/v05/q26-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 26, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q26-v06",
+            "slotId": "q26-v06",
+            "quadrantId": "q26",
+            "quadrantNumber": 26,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 181,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q26/v06/q26-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 26, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q26-v07",
+            "slotId": "q26-v07",
+            "quadrantId": "q26",
+            "quadrantNumber": 26,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 182,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q26/v07/q26-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 26, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q27-v01",
+            "slotId": "q27-v01",
+            "quadrantId": "q27",
+            "quadrantNumber": 27,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 183,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q27/v01/q27-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 27, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q27-v02",
+            "slotId": "q27-v02",
+            "quadrantId": "q27",
+            "quadrantNumber": 27,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 184,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q27/v02/q27-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 27, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q27-v03",
+            "slotId": "q27-v03",
+            "quadrantId": "q27",
+            "quadrantNumber": 27,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 185,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q27/v03/q27-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 27, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q27-v04",
+            "slotId": "q27-v04",
+            "quadrantId": "q27",
+            "quadrantNumber": 27,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 186,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q27/v04/q27-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 27, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q27-v05",
+            "slotId": "q27-v05",
+            "quadrantId": "q27",
+            "quadrantNumber": 27,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 187,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q27/v05/q27-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 27, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q27-v06",
+            "slotId": "q27-v06",
+            "quadrantId": "q27",
+            "quadrantNumber": 27,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 188,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q27/v06/q27-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 27, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q27-v07",
+            "slotId": "q27-v07",
+            "quadrantId": "q27",
+            "quadrantNumber": 27,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 189,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q27/v07/q27-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 27, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q28-v01",
+            "slotId": "q28-v01",
+            "quadrantId": "q28",
+            "quadrantNumber": 28,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 190,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q28/v01/q28-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 28, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q28-v02",
+            "slotId": "q28-v02",
+            "quadrantId": "q28",
+            "quadrantNumber": 28,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 191,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q28/v02/q28-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 28, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q28-v03",
+            "slotId": "q28-v03",
+            "quadrantId": "q28",
+            "quadrantNumber": 28,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 192,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q28/v03/q28-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 28, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q28-v04",
+            "slotId": "q28-v04",
+            "quadrantId": "q28",
+            "quadrantNumber": 28,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 193,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q28/v04/q28-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 28, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q28-v05",
+            "slotId": "q28-v05",
+            "quadrantId": "q28",
+            "quadrantNumber": 28,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 194,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q28/v05/q28-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 28, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q28-v06",
+            "slotId": "q28-v06",
+            "quadrantId": "q28",
+            "quadrantNumber": 28,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 195,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q28/v06/q28-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 28, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q28-v07",
+            "slotId": "q28-v07",
+            "quadrantId": "q28",
+            "quadrantNumber": 28,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 196,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q28/v07/q28-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 28, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q29-v01",
+            "slotId": "q29-v01",
+            "quadrantId": "q29",
+            "quadrantNumber": 29,
+            "versionId": "v01",
+            "versionNumber": 1,
+            "position": 197,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q29/v01/q29-v01.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 29, versão 01, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q29-v02",
+            "slotId": "q29-v02",
+            "quadrantId": "q29",
+            "quadrantNumber": 29,
+            "versionId": "v02",
+            "versionNumber": 2,
+            "position": 198,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q29/v02/q29-v02.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 29, versão 02, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q29-v03",
+            "slotId": "q29-v03",
+            "quadrantId": "q29",
+            "quadrantNumber": 29,
+            "versionId": "v03",
+            "versionNumber": 3,
+            "position": 199,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q29/v03/q29-v03.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 29, versão 03, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q29-v04",
+            "slotId": "q29-v04",
+            "quadrantId": "q29",
+            "quadrantNumber": 29,
+            "versionId": "v04",
+            "versionNumber": 4,
+            "position": 200,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q29/v04/q29-v04.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 29, versão 04, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q29-v05",
+            "slotId": "q29-v05",
+            "quadrantId": "q29",
+            "quadrantNumber": 29,
+            "versionId": "v05",
+            "versionNumber": 5,
+            "position": 201,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q29/v05/q29-v05.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 29, versão 05, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q29-v06",
+            "slotId": "q29-v06",
+            "quadrantId": "q29",
+            "quadrantNumber": 29,
+            "versionId": "v06",
+            "versionNumber": 6,
+            "position": 202,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q29/v06/q29-v06.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 29, versão 06, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        },
+        {
+            "id": "q29-v07",
+            "slotId": "q29-v07",
+            "quadrantId": "q29",
+            "quadrantNumber": 29,
+            "versionId": "v07",
+            "versionNumber": 7,
+            "position": 203,
+            "asset": {
+                "path": null,
+                "expectedPath": "/assets/story/quadrants/q29/v07/q29-v07.png",
+                "mimeType": null
+            },
+            "status": "empty",
+            "altText": "Quadrante 29, versão 07, imagem pendente.",
+            "caption": null,
+            "revision": 0,
+            "checksum": null,
+            "dimensions": {
+                "width": null,
+                "height": null,
+                "aspectRatio": null
+            },
+            "metadata": []
+        }
+    ]
+}

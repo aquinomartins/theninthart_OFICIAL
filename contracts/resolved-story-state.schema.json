@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/resolved-story-state.schema.json",
+  "title": "Estado resolvido",
+  "description": "Saída futura, sem algoritmo de resolução.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "mechanismVersion",
+    "storyRunId",
+    "canonicalVersionId",
+    "blockVersions",
+    "quadrantSelections",
+    "title",
+    "machineFingerprint",
+    "worldFingerprint",
+    "kitchenFingerprint",
+    "threatFingerprint",
+    "emotionalFingerprint",
+    "continuityPayload",
+    "resolutionTrace",
+    "seed",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "mechanismVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storyRunId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canonicalVersionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "blockVersions": {
+      "type": "object"
+    },
+    "quadrantSelections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "quadrantId",
+          "versionId",
+          "slotId",
+          "score",
+          "reasons",
+          "override",
+          "metadata"
+        ],
+        "properties": {
+          "quadrantId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "versionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slotId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "score": {
+            "type": "number"
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "override": {
+            "type": "boolean"
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "machineFingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "worldFingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "kitchenFingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "threatFingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "emotionalFingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "continuityPayload": {
+      "type": "object"
+    },
+    "resolutionTrace": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createdAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/quadrant.schema.json",
+  "title": "Quadrante narrativo",
+  "description": "Estrutura semântica de um quadrante.",
+  "type": "object",
+  "required": [
+    "id",
+    "number",
+    "stableKey",
+    "position",
+    "blockId",
+    "blockLabel",
+    "fixedFunction",
+    "narrativePurpose",
+    "aspectClass",
+    "gridArea",
+    "continuityGroup",
+    "narrativeWeight",
+    "previousQuadrant",
+    "nextQuadrant",
+    "gutterBefore",
+    "gutterAfter",
+    "affectedByControls",
+    "affectedByWidgets",
+    "allowedVersionIds",
+    "imageRequired",
+    "captionAllowed",
+    "dialogueAllowed",
+    "enabled",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 29
+    },
+    "stableKey": {
+      "type": "string",
+      "minLength": 1
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 29
+    },
+    "blockId": {
+      "enum": [
+        "assembly",
+        "activation",
+        "world",
+        "crisis",
+        "return",
+        "consequences"
+      ]
+    },
+    "blockLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fixedFunction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "narrativePurpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aspectClass": {
+      "enum": [
+        "narrow-vertical",
+        "title-strip",
+        "medium",
+        "wide",
+        "panorama",
+        "tall",
+        "full-width",
+        "consequence-narrow"
+      ]
+    },
+    "gridArea": {
+      "type": "string",
+      "minLength": 1
+    },
+    "continuityGroup": {
+      "type": "string",
+      "minLength": 1
+    },
+    "narrativeWeight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "previousQuadrant": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^q(?:0[1-9]|1[0-9]|2[0-9])$"
+    },
+    "nextQuadrant": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^q(?:0[1-9]|1[0-9]|2[0-9])$"
+    },
+    "gutterBefore": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gutterAfter": {
+      "type": "string",
+      "minLength": 1
+    },
+    "affectedByControls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "affectedByWidgets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "allowedVersionIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "imageRequired": {
+      "type": "boolean"
+    },
+    "captionAllowed": {
+      "type": "boolean"
+    },
+    "dialogueAllowed": {
+      "type": "boolean"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

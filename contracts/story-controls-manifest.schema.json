@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/story-controls-manifest.schema.json",
+  "title": "Controles narrativos",
+  "description": "Manifesto canônico de controles narrativos.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "manifestVersion",
+    "locale",
+    "generatedAt",
+    "items"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "manifestVersion": {
+      "type": "string"
+    },
+    "locale": {
+      "const": "pt-BR"
+    },
+    "generatedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "minItems": 32,
+      "maxItems": 32,
+      "items": {
+        "$ref": "story-control.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/quadrant-slot.schema.json",
+  "title": "Slot de imagem",
+  "description": "Slot editorial quadrante-versão.",
+  "type": "object",
+  "required": [
+    "id",
+    "slotId",
+    "quadrantId",
+    "quadrantNumber",
+    "versionId",
+    "versionNumber",
+    "position",
+    "asset",
+    "status",
+    "altText",
+    "caption",
+    "revision",
+    "checksum",
+    "dimensions",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "slotId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quadrantId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quadrantNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 29
+    },
+    "versionId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "versionNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 203
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "path",
+        "expectedPath",
+        "mimeType"
+      ],
+      "properties": {
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mimeType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "enum": [
+        "empty",
+        "planned",
+        "draft",
+        "review",
+        "approved",
+        "published",
+        "archived"
+      ]
+    },
+    "altText": {
+      "type": "string",
+      "minLength": 1
+    },
+    "caption": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "checksum": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dimensions": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "aspectRatio"
+      ],
+      "properties": {
+        "width": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "aspectRatio": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

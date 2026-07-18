@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theninthart.example/contracts/story-input-state.schema.json",
+  "title": "Estado de entrada",
+  "description": "Entrada futura do mecanismo narrativo.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "mechanismVersion",
+    "sessionId",
+    "userId",
+    "anonymousId",
+    "seed",
+    "createdAt",
+    "updatedAt",
+    "controls",
+    "widgets",
+    "publicState"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "mechanismVersion": {
+      "type": "string"
+    },
+    "sessionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "userId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "anonymousId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createdAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updatedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "controls": {
+      "type": "object",
+      "properties": {
+        "engrenagem-vegetal": {
+          "type": "boolean"
+        },
+        "bobina-eletrica": {
+          "type": "boolean"
+        },
+        "ampulheta-temporal": {
+          "type": "boolean"
+        },
+        "tubo-vapor": {
+          "type": "boolean"
+        },
+        "ima-pilao": {
+          "type": "boolean"
+        },
+        "espiga-condutora": {
+          "type": "boolean"
+        },
+        "cristal-memoria": {
+          "type": "boolean"
+        },
+        "sensor-brasas": {
+          "type": "boolean"
+        },
+        "prehistoria-terrestre": {
+          "type": "boolean"
+        },
+        "prehistoria-aerea": {
+          "type": "boolean"
+        },
+        "ancestral-indigena": {
+          "type": "boolean"
+        },
+        "historico-mestico": {
+          "type": "boolean"
+        },
+        "presente-expandido": {
+          "type": "boolean"
+        },
+        "futuro-urbano": {
+          "type": "boolean"
+        },
+        "futuro-distopico": {
+          "type": "boolean"
+        },
+        "paradoxo-temporal": {
+          "type": "boolean"
+        },
+        "mandioca": {
+          "type": "boolean"
+        },
+        "milho": {
+          "type": "boolean"
+        },
+        "tapioca": {
+          "type": "boolean"
+        },
+        "bolo": {
+          "type": "boolean"
+        },
+        "panela-barro": {
+          "type": "boolean"
+        },
+        "forno-barro": {
+          "type": "boolean"
+        },
+        "traco-indigena": {
+          "type": "boolean"
+        },
+        "traco-afro-portugues": {
+          "type": "boolean"
+        },
+        "humor": {
+          "type": "boolean"
+        },
+        "assombro": {
+          "type": "boolean"
+        },
+        "perigo": {
+          "type": "boolean"
+        },
+        "melancolia": {
+          "type": "boolean"
+        },
+        "vida": {
+          "type": "boolean"
+        },
+        "morte": {
+          "type": "boolean"
+        },
+        "imaginacao": {
+          "type": "boolean"
+        },
+        "realidade": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "widgets": {
+      "type": "object",
+      "properties": {
+        "timeline": {
+          "type": "object"
+        },
+        "public-kitchen": {
+          "type": "object"
+        },
+        "machine-state": {
+          "type": "object"
+        },
+        "dramatic-climate": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "publicState": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
