@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tna\Http;
 
-final class ApiException extends \RuntimeException
+class ApiException extends \RuntimeException
 {
     public function __construct(private readonly int $statusCode, string $message)
     {
