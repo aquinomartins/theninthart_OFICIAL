@@ -1,0 +1,15 @@
+release/
+server/config.php
+tna-config.php
+.env
+.env.*
+logs/
+backups/
+*.log
+*.tmp
+*.cache
+.cache/
+.npm/
+node_modules/
+frontend/story-engine/dist/
+coverage/

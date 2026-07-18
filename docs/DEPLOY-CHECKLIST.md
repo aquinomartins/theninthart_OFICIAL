@@ -1,0 +1,30 @@
+# Checklist de deploy
+
+- [ ] Backup de arquivos concluído
+- [ ] Backup de banco concluído
+- [ ] Domínio confirmado
+- [ ] HTTPS ativo
+- [ ] PHP 8.1+ selecionado
+- [ ] PDO MySQL ativo
+- [ ] Banco criado
+- [ ] Usuário MySQL criado e associado
+- [ ] Permissões revisadas
+- [ ] Configuração privada fora de `public_html`
+- [ ] Upload em diretório temporário
+- [ ] Checksums verificados
+- [ ] Migrations executadas
+- [ ] Seeds executados
+- [ ] Health OK
+- [ ] Bootstrap OK
+- [ ] Sessão anônima criada
+- [ ] Controles persistem
+- [ ] Widgets persistem
+- [ ] Story run retorna 29 painéis
+- [ ] 29 quadrantes visíveis
+- [ ] Fallback funcional
+- [ ] Mobile testado
+- [ ] Navegadores testados
+- [ ] Logs privados revisados
+- [ ] Instaladores/scripts temporários removidos
+- [ ] ZIP temporário removido
+- [ ] Rollback disponível
