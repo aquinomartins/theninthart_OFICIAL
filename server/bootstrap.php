@@ -3,10 +3,12 @@ declare(strict_types=1);
 
 use Tna\Config\AppConfig;
 use Tna\Config\DatabaseConfig;
+use Tna\Controller\BootstrapController;
+use Tna\Controller\HealthController;
+use Tna\Controller\PublicStateController;
 use Tna\Database\ConnectionFactory;
 use Tna\Http\ErrorHandler;
 use Tna\Http\Request;
-use Tna\Http\Response;
 use Tna\Http\Router;
 use Tna\Middleware\JsonContentTypeMiddleware;
 use Tna\Middleware\RequestIdMiddleware;
@@ -16,6 +18,9 @@ use Tna\Security\PublicIdGenerator;
 use Tna\Support\Clock;
 use Tna\Support\Environment;
 use Tna\Support\Logger;
+use Tna\Service\BootstrapService;
+use Tna\Service\HealthService;
+use Tna\Service\PublicStateService;
 
 $autoload = __DIR__ . '/vendor/autoload.php';
 if (is_file($autoload)) {
@@ -58,13 +63,11 @@ try {
 
     $router = new Router();
     $connectionFactory = new ConnectionFactory(DatabaseConfig::fromArray($config));
-    unset($connectionFactory); // kept for routes that need PDO later; ping intentionally does not connect.
+    $migrationsPath = dirname(__DIR__) . '/database/migrations';
 
-    $router->get('/v1/ping', static fn (Request $request): Response => Response::envelope([
-        'status' => 'ok',
-        'application' => 'the-ninth-art-api',
-        'databaseChecked' => false,
-    ], $request->requestId() ?? 'unavailable', $clock));
+    $router->get('/v1/health', new HealthController(new HealthService($connectionFactory, $migrationsPath), $clock));
+    $router->get('/v1/bootstrap', new BootstrapController(new BootstrapService($connectionFactory), $clock));
+    $router->get('/v1/public-state', new PublicStateController(new PublicStateService($connectionFactory), $clock));
 
     $router->dispatch($request)->send();
 } catch (Throwable $throwable) {
