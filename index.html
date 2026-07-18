@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/tempo.css" />
     <link rel="stylesheet" href="styles/dashboard-hub.css" />
+    <link rel="stylesheet" href="styles/story-grid.css" />
   </head>
   <body class="page-home page-tempo" data-page="tempo">
       <div class="floating-narrative-layer"><img src="/tempo/images/imagem1.png" alt="Ir para o sistema visual" role="button" tabindex="0" aria-pressed="false" aria-label="Ir para o sistema visual" data-floating-narrative></div>
@@ -155,7 +156,23 @@
           <h2 id="visual-system-title">A modular space for future images, works and visual research.</h2>
         </div>
 
-        <div class="apple-like-grid">
+        <div
+          class="story-grid-host"
+          data-story-grid-host
+          data-default-version="v01"
+          aria-labelledby="story-grid-title"
+        >
+          <header class="story-grid-header">
+            <p class="section-kicker">Narrativa participativa</p>
+            <h3 id="story-grid-title">A história em 29 quadrantes</h3>
+            <p>Cada imagem será determinada pelas peças, pelos parâmetros e pelo estado narrativo da experiência.</p>
+          </header>
+          <p class="story-grid-status" data-story-grid-status>Preparando os 29 quadrantes…</p>
+          <div class="story-grid" data-story-grid role="list" aria-label="Quadrantes da história participativa"></div>
+          <div class="visually-hidden" data-story-grid-live aria-live="polite"></div>
+        </div>
+
+        <div class="apple-like-grid" data-story-static-fallback>
           <figure class="image-slot visual-slot-large">
             <img src="/tempo/images/imagem018.png" alt="" />
             <figcaption>Image Slot 01</figcaption>
@@ -290,5 +307,6 @@
     <script src="script.js"></script>
     <script type="module" src="scripts/dashboard-hub.js"></script>
     <script type="module" src="scripts/tempo.js"></script>
+    <script type="module" src="scripts/story-grid.js"></script>
   </body>
 </html>
