@@ -26,7 +26,19 @@ final class SessionService
             $ins=$pdo->prepare('INSERT INTO session_control_states (session_id,control_id,enabled,value_json,revision,updated_at) VALUES (?,?,?,?,?,?)');
             foreach($controls as $c){ $ins->execute([$sessionId,$c['id'],0,'{"enabled":false}',1,$now]); }
             $wins=$pdo->prepare('INSERT INTO session_widget_states (session_id,widget_id,state_json,revision,updated_at) VALUES (?,?,?,?,?)');
-            foreach($widgets as $w){ $wins->execute([$sessionId,$w['id'],Json::encode(['parameters'=>$this->defaults($w['parameters'])]),1,$now]); }
+            foreach ($widgets as $w) {
+                $wins->execute([
+                    $sessionId,
+                    $w['id'],
+                    Json::encode([
+                        'parameters' => $this->defaults(
+                            (string) $w['parameters_json']
+                        ),
+                    ]),
+                    1,
+                    $now,
+                ]);
+            }
             $this->outbox($pdo,$publicId,'session.created',['sessionId'=>$publicId,'revision'=>1]);
             $state=$this->readState($pdo,$publicId);
             $state['token']=$token;
