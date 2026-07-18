@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/tempo.css" />
     <link rel="stylesheet" href="styles/dashboard-hub.css" />
     <link rel="stylesheet" href="styles/story-grid.css" />
+    <link rel="stylesheet" href="styles/story-engine-host.css" />
   </head>
   <body class="page-home page-tempo" data-page="tempo">
       <div class="floating-narrative-layer"><img src="/tempo/images/imagem1.png" alt="Ir para o sistema visual" role="button" tabindex="0" aria-pressed="false" aria-label="Ir para o sistema visual" data-floating-narrative></div>
@@ -157,6 +158,18 @@
         </div>
 
         <div
+          class="story-engine-shell"
+          data-story-engine-shell
+        >
+          <tna-story-engine
+            data-manifest-index="/data/story-manifest-index.json"
+            data-default-version="v01"
+            data-fallback-selector="[data-story-grid-host]"
+          ></tna-story-engine>
+        </div>
+
+        <div data-story-grid-fallback>
+        <div
           class="story-grid-host"
           data-story-grid-host
           data-default-version="v01"
@@ -170,6 +183,7 @@
           <p class="story-grid-status" data-story-grid-status>Preparando os 29 quadrantes…</p>
           <div class="story-grid" data-story-grid role="list" aria-label="Quadrantes da história participativa"></div>
           <div class="visually-hidden" data-story-grid-live aria-live="polite"></div>
+        </div>
         </div>
 
         <div class="apple-like-grid" data-story-static-fallback>
@@ -308,5 +322,6 @@
     <script type="module" src="scripts/dashboard-hub.js"></script>
     <script type="module" src="scripts/tempo.js"></script>
     <script type="module" src="scripts/story-grid.js"></script>
+    <script src="scripts/story-engine-loader.js" defer></script>
   </body>
 </html>

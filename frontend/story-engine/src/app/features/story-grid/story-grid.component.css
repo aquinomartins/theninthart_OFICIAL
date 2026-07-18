@@ -1,0 +1,38 @@
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-areas:
+    "q01 q01 q02 q02 q03 q03 q04 q04 q05 q05 q06 q06"
+    "q07 q07 q07 q07 q07 q07 q07 q07 q07 q07 q07 q07"
+    "q08 q08 q08 q08 q09 q09 q09 q09 q10 q10 q10 q10"
+    "q11 q11 q11 q11 q11 q11 q12 q12 q12 q12 q12 q12"
+    "q13 q13 q13 q13 q13 q13 q13 q13 q13 q13 q13 q13"
+    "q14 q14 q14 q14 q14 q15 q15 q15 q15 q15 q15 q15"
+    "q14 q14 q14 q14 q14 q16 q16 q16 q16 q16 q16 q16"
+    "q17 q17 q17 q17 q17 q17 q18 q18 q18 q18 q18 q18"
+    "q19 q19 q19 q19 q19 q19 q19 q19 q19 q19 q19 q19"
+    "q20 q20 q20 q20 q20 q20 q20 q20 q20 q20 q20 q20"
+    "q21 q21 q21 q21 q22 q22 q22 q22 q23 q23 q23 q23"
+    "q24 q24 q25 q25 q26 q26 q27 q27 q28 q28 q29 q29";
+  gap: var(--story-gutter);
+  align-items: stretch;
+}
+@media (max-width: 1099px) {
+  .story-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-areas: none; }
+  .story-panel { grid-area: auto !important; grid-column: span 2; }
+  [data-quadrant-id="q07"], [data-quadrant-id="q13"], [data-quadrant-id="q19"], [data-quadrant-id="q20"] { grid-column: 1 / -1; }
+  [data-quadrant-id="q11"], [data-quadrant-id="q12"], [data-quadrant-id="q17"], [data-quadrant-id="q18"] { grid-column: span 3; }
+  [data-quadrant-id="q14"] { grid-column: span 3; grid-row: span 2; min-height: 360px; }
+  [data-quadrant-id="q15"], [data-quadrant-id="q16"] { grid-column: span 3; }
+}
+@media (max-width: 767px) {
+  { --story-gutter: 8px; }
+  .story-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .story-panel { grid-column: 1 / -1; min-height: 164px; }
+  [data-quadrant-id="q01"], [data-quadrant-id="q02"], [data-quadrant-id="q03"], [data-quadrant-id="q04"], [data-quadrant-id="q05"], [data-quadrant-id="q06"], [data-quadrant-id="q24"], [data-quadrant-id="q25"], [data-quadrant-id="q26"], [data-quadrant-id="q27"], [data-quadrant-id="q28"], [data-quadrant-id="q29"] { grid-column: span 2; }
+  .story-panel__caption { padding: 9px; gap: 2px 7px; }
+  .story-panel__function { font-size: .72rem; }
+  .story-panel__slot-code { font-size: .62rem; }
+  [data-quadrant-id="q14"] { min-height: 250px; }
+}
+@media (prefers-reduced-motion: reduce) { .story-panel { transition: none; } }

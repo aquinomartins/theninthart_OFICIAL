@@ -1,0 +1,1 @@
+import {ChangeDetectionStrategy,Component} from '@angular/core';@Component({selector:'tna-story-loading',standalone:true,templateUrl:'./story-loading.component.html',styleUrl:'./story-loading.component.css',changeDetection:ChangeDetectionStrategy.OnPush})export class StoryLoadingComponent{}

@@ -1,0 +1,6 @@
+<div class="story-engine-root" data-story-engine-root [attr.data-status]="state.state().status">
+  <div class="visually-hidden" aria-live="polite">{{ live }}</div>
+  @if (state.state().status === 'loading') { <tna-story-loading /> }
+  @if (state.state().status === 'error') { <tna-story-error (retry)="init()" /> }
+  @if (state.state().status === 'ready') { <tna-story-grid [quadrants]="state.quadrants()" [slotForQuadrant]="slotForQuadrant" /> }
+</div>
