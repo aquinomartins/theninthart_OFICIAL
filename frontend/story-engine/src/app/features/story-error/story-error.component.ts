@@ -1,0 +1,1 @@
+import {ChangeDetectionStrategy,Component,EventEmitter,Output} from '@angular/core';@Component({selector:'tna-story-error',standalone:true,templateUrl:'./story-error.component.html',styleUrl:'./story-error.component.css',changeDetection:ChangeDetectionStrategy.OnPush})export class StoryErrorComponent{@Output()retry=new EventEmitter<void>()}

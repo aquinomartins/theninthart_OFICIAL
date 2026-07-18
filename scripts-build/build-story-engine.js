@@ -1,0 +1,4 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {spawn} from 'node:child_process';
+const root=path.resolve(path.dirname(new URL(import.meta.url).pathname),'..'), project=path.join(root,'frontend/story-engine'), dist=path.join(project,'dist/story-engine/browser'), out=path.join(root,'assets/story-engine');
+function run(cmd,args,cwd){return new Promise((res,rej)=>{const p=spawn(cmd,args,{cwd,stdio:'inherit',shell:process.platform==='win32'});p.on('exit',c=>c===0?res():rej(new Error(`${cmd} ${args.join(' ')} failed: ${c}`)))})}
+await run('npm',['run','build'],project);await fs.rm(out,{recursive:true,force:true});await fs.mkdir(out,{recursive:true});const keep=/^(main|polyfills|styles)-.*\.(js|css)$/;for(const f of await fs.readdir(dist)){if(keep.test(f))await fs.copyFile(path.join(dist,f),path.join(out,f));}await run('node',[path.join(root,'scripts-build/generate-story-engine-assets.js')],root);

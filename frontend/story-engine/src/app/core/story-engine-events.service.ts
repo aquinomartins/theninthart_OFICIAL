@@ -1,0 +1,2 @@
+import {Injectable} from '@angular/core';
+@Injectable({providedIn:'root'}) export class StoryEngineEventsService{emit(name:string,detail:Record<string,unknown>={}){window.dispatchEvent(new CustomEvent(name,{detail:{source:'angular',...detail,timestamp:Date.now()}}))} error(code:string,phase:string,resource:string|undefined,recoverable=true){this.emit('tna:story-engine-error',{code,phase,resource,recoverable})}}
