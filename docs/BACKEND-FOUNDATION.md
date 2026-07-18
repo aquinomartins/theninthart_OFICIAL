@@ -115,3 +115,20 @@ GET /api/index.php?route=/v1/ping
 ```
 
 Ainda não existe `/health`.
+
+## Sessões anônimas
+
+Foram adicionados apenas os endpoints de estado anônimo abaixo:
+
+```http
+POST /api/v1/sessions
+GET /api/v1/sessions/{sessionId}
+PUT /api/v1/sessions/{sessionId}/controls
+PUT /api/v1/sessions/{sessionId}/widgets/{widgetId}
+```
+
+As rotas privadas exigem o header `X-TNA-Session-Token`. A criação gera um `public_id` público e um token bruto com `random_bytes`; somente o hash SHA-256 do token é armazenado. O token bruto é retornado apenas na resposta de criação e não deve ser registrado em logs.
+
+Cada sessão inicia, dentro de uma transação, com os 32 controles canônicos desligados e os quatro Widgets com parâmetros padrão derivados do catálogo. As escritas exigem `revision` e aplicam controle otimista na linha da sessão. Conflitos retornam HTTP 409 com `code: REVISION_CONFLICT`, a revisão atual e o estado seguro, sem token.
+
+As atualizações de controles são parciais e aceitam somente IDs canônicos com valores booleanos. As atualizações de Widgets são parciais, preservam parâmetros omitidos e validam tipo, opções, mínimo, máximo e step pelo catálogo. As transações registram eventos `session.created`, `session.controls.updated` e `session.widget.updated` na outbox, sem processamento nesta etapa.
