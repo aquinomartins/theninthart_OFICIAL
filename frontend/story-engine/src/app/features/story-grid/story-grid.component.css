@@ -26,8 +26,13 @@
   [data-quadrant-id="q15"], [data-quadrant-id="q16"] { grid-column: span 3; }
 }
 @media (max-width: 767px) {
-  { --story-gutter: 8px; }
-  .story-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  :host {
+    --story-gutter: 8px;
+  }
+
+  .story-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
   .story-panel { grid-column: 1 / -1; min-height: 164px; }
   [data-quadrant-id="q01"], [data-quadrant-id="q02"], [data-quadrant-id="q03"], [data-quadrant-id="q04"], [data-quadrant-id="q05"], [data-quadrant-id="q06"], [data-quadrant-id="q24"], [data-quadrant-id="q25"], [data-quadrant-id="q26"], [data-quadrant-id="q27"], [data-quadrant-id="q28"], [data-quadrant-id="q29"] { grid-column: span 2; }
   .story-panel__caption { padding: 9px; gap: 2px 7px; }
