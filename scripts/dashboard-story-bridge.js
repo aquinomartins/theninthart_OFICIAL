@@ -19,6 +19,8 @@
   let ready = false;
   let queue = [];
   let replaying = false;
+  let readyPollTimer = 0;
+  let readyPollStartedAt = 0;
 
   function enqueue(name, detail) {
     if (name === 'dashboard:state-snapshot') {
@@ -71,11 +73,44 @@
     // e será recebido diretamente por ele. Não o redispare aqui.
   }
 
+  function storyEngineReady() {
+    return window.TNAStoryEngine?.isReady?.() === true;
+  }
+
+  function stopReadyPolling() {
+    if (readyPollTimer) {
+      window.clearTimeout(readyPollTimer);
+      readyPollTimer = 0;
+    }
+  }
+
+  function pollStoryEngineReady() {
+    if (ready || storyEngineReady()) {
+      stopReadyPolling();
+      flush();
+      return;
+    }
+
+    if (Date.now() - readyPollStartedAt >= 5000) {
+      stopReadyPolling();
+      return;
+    }
+
+    readyPollTimer = window.setTimeout(pollStoryEngineReady, 100);
+  }
+
+  function startReadyPolling() {
+    stopReadyPolling();
+    readyPollStartedAt = Date.now();
+    readyPollTimer = window.setTimeout(pollStoryEngineReady, 100);
+  }
+
   function flush() {
     if (ready) {
       return;
     }
 
+    stopReadyPolling();
     ready = true;
 
     const pending = queue.splice(0);
@@ -118,6 +153,12 @@
       passive: true,
     });
 
+    if (storyEngineReady()) {
+      flush();
+    } else {
+      startReadyPolling();
+    }
+
     window.setTimeout(snapshot, 250);
     window.setTimeout(snapshot, 1200);
   }
@@ -138,9 +179,11 @@
       window.removeEventListener('tna:dashboard-restore-state', restore);
       window.removeEventListener('tna:story-engine-ready', flush);
 
+      stopReadyPolling();
       queue = [];
       ready = false;
       replaying = false;
+      readyPollStartedAt = 0;
       window.__TNADashboardStoryBridge = false;
     },
   };
