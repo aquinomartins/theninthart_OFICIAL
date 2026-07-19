@@ -1,4 +1,4 @@
-import {computed,Injectable,signal} from '@angular/core';import {BootstrapManifests,QuadrantSlot,StoryEngineError,StoryEngineState} from '../story-engine.models';
+import {computed,Injectable,signal} from '@angular/core';import {BootstrapManifests,QuadrantSlot,StoryEngineError,StoryEngineState,StoryVersion} from '../story-engine.models';
 const empty={controls:[],widgets:[],versions:[],quadrants:[],slots:[]};
 @Injectable({providedIn:'root'}) export class StoryStateService{private readonly s=signal<StoryEngineState>({status:'idle',activeVersionId:'v01',manifests:empty,activeSelections:{},errors:[],initializedAt:null,revision:0});readonly state=this.s.asReadonly();readonly quadrants=computed(()=>this.s().manifests.quadrants);readonly selections=computed(()=>this.s().activeSelections);readonly ready=computed(()=>this.s().status==='ready');readonly quadrantsById=computed(()=>new Map(this.s().manifests.quadrants.map(q=>[q.id,q])));readonly versionsById = computed(
   () =>
