@@ -1,6 +1,8 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-07-18T00:00:00.000Z",
+  "generatedAt": "2026-07-19T00:09:14.092Z",
   "styles": [],
-  "scripts": []
+  "scripts": [
+    "/assets/story-engine/main-3b8f7e410eedc166.js"
+  ]
 }
