@@ -29,6 +29,7 @@ test('story engine ready wait reports diagnostic error through normal error flow
 function createBridgeHarness({ engineReady = false } = {}) {
   const listeners = new Map();
   const timers = [];
+  const intervals = [];
   const calls = [];
   const documentListeners = new Map();
   const context = {
@@ -75,6 +76,13 @@ function createBridgeHarness({ engineReady = false } = {}) {
       clearTimeout(id) {
         timers[id - 1] = null;
       },
+      setInterval(handler) {
+        intervals.push(handler);
+        return intervals.length;
+      },
+      clearInterval(id) {
+        intervals[id - 1] = null;
+      },
     },
   };
 
@@ -91,6 +99,10 @@ function createBridgeHarness({ engineReady = false } = {}) {
     runNextTimer() {
       const timer = timers.shift();
       if (timer) timer();
+    },
+    runNextInterval() {
+      const interval = intervals.find(Boolean);
+      if (interval) interval();
     },
     setEngineReady(value) {
       engineReady = value;
@@ -119,7 +131,7 @@ test('dashboard bridge polling flushes once when API readiness appears later', (
 
   assert.equal(harness.context.window.TNADashboardStoryBridge.isReady(), false);
   harness.setEngineReady(true);
-  harness.runNextTimer();
+  harness.runNextInterval();
   assert.equal(harness.context.window.TNADashboardStoryBridge.isReady(), true);
   harness.fire('dashboard:feature-toggle', { controlId: 'c02' });
   assert.equal(harness.calls.filter((name) => name === 'dashboard:feature-toggle').length, 0);
