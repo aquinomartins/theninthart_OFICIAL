@@ -1,0 +1,535 @@
+{
+    "rulesVersion": "weighted-participatory-v1",
+    "profiles": {
+        "v01": {
+            "past": 3,
+            "terrestrial": 3,
+            "kitchen": 2,
+            "humor": 2,
+            "wonder": 2,
+            "life": 1,
+            "machine": 1
+        },
+        "v02": {
+            "past": 3,
+            "aerial": 3,
+            "wonder": 2,
+            "humor": 2,
+            "life": 1,
+            "kitchen": 1
+        },
+        "v03": {
+            "future": 3,
+            "machine": 3,
+            "kitchen": 2,
+            "wonder": 2,
+            "reality": 1
+        },
+        "v04": {
+            "past": 2,
+            "ancestry": 3,
+            "kitchen": 3,
+            "terrestrial": 1,
+            "life": 2
+        },
+        "v05": {
+            "past": 2,
+            "kitchen": 3,
+            "wonder": 3,
+            "humor": 1,
+            "imagination": 2
+        },
+        "v06": {
+            "present": 3,
+            "paradox": 3,
+            "machine": 2,
+            "rupture": 2,
+            "humor": 1,
+            "reality": 1
+        },
+        "v07": {
+            "future": 3,
+            "melancholy": 3,
+            "danger": 2,
+            "death": 2,
+            "machine": 1
+        }
+    },
+    "controlAffinities": {
+        "engrenagem-vegetal": {
+            "weight": 1,
+            "axes": {
+                "machine": 1.4,
+                "life": 0.5,
+                "v01": 0.4
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "bobina-eletrica": {
+            "weight": 1,
+            "axes": {
+                "machine": 1.6,
+                "future": 0.5,
+                "v03": 0.5
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "ampulheta-temporal": {
+            "weight": 1,
+            "axes": {
+                "past": 0.7,
+                "future": 0.7,
+                "paradox": 1.2,
+                "v06": 0.6
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "tubo-vapor": {
+            "weight": 1,
+            "axes": {
+                "machine": 1,
+                "past": 0.8,
+                "wonder": 0.4
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "ima-pilao": {
+            "weight": 1,
+            "axes": {
+                "machine": 0.8,
+                "kitchen": 1,
+                "ancestry": 0.5
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "espiga-condutora": {
+            "weight": 1,
+            "axes": {
+                "kitchen": 1,
+                "future": 0.5,
+                "life": 0.8
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "cristal-memoria": {
+            "weight": 1,
+            "axes": {
+                "past": 1,
+                "melancholy": 0.8,
+                "wonder": 0.5
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "sensor-brasas": {
+            "weight": 1,
+            "axes": {
+                "future": 1.2,
+                "machine": 1,
+                "danger": 0.4
+            },
+            "families": [
+                "machine-parts"
+            ]
+        },
+        "prehistoria-terrestre": {
+            "weight": 1,
+            "axes": {
+                "past": 2,
+                "terrestrial": 2,
+                "v01": 1.5
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "prehistoria-aerea": {
+            "weight": 1,
+            "axes": {
+                "past": 2,
+                "aerial": 2,
+                "v02": 1.5
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "ancestral-indigena": {
+            "weight": 1,
+            "axes": {
+                "ancestry": 2,
+                "past": 1,
+                "kitchen": 1,
+                "v04": 1.2
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "historico-mestico": {
+            "weight": 1,
+            "axes": {
+                "ancestry": 1.4,
+                "past": 1,
+                "kitchen": 1.2,
+                "v04": 1
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "presente-expandido": {
+            "weight": 1,
+            "axes": {
+                "present": 2,
+                "reality": 1,
+                "v06": 1.2
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "futuro-urbano": {
+            "weight": 1,
+            "axes": {
+                "future": 2,
+                "machine": 1,
+                "v03": 1.2
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "futuro-distopico": {
+            "weight": 1,
+            "axes": {
+                "future": 2,
+                "danger": 1,
+                "melancholy": 1,
+                "v07": 1.4
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "paradoxo-temporal": {
+            "weight": 1,
+            "axes": {
+                "paradox": 2.5,
+                "imagination": 1,
+                "v06": 1.5
+            },
+            "families": [
+                "world-time"
+            ]
+        },
+        "mandioca": {
+            "weight": 1,
+            "axes": {
+                "kitchen": 1.4,
+                "terrestrial": 0.8,
+                "v01": 0.8,
+                "v04": 0.4
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "milho": {
+            "weight": 1,
+            "axes": {
+                "kitchen": 1,
+                "aerial": 0.8,
+                "v02": 0.8
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "tapioca": {
+            "weight": 1,
+            "axes": {
+                "kitchen": 1.2,
+                "humor": 0.5,
+                "v01": 1,
+                "v05": 0.4
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "bolo": {
+            "weight": 1,
+            "axes": {
+                "kitchen": 1.2,
+                "v03": 0.5,
+                "v05": 0.7,
+                "v07": 0.3
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "panela-barro": {
+            "weight": 1,
+            "axes": {
+                "kitchen": 1.5,
+                "ancestry": 1,
+                "v05": 1
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "forno-barro": {
+            "weight": 1,
+            "axes": {
+                "kitchen": 1.2,
+                "past": 0.8,
+                "v04": 0.8
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "traco-indigena": {
+            "weight": 1,
+            "axes": {
+                "ancestry": 1.5,
+                "kitchen": 0.8,
+                "v04": 1
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "traco-afro-portugues": {
+            "weight": 1,
+            "axes": {
+                "ancestry": 1.5,
+                "kitchen": 0.8,
+                "v04": 1
+            },
+            "families": [
+                "kitchen-culture"
+            ]
+        },
+        "humor": {
+            "weight": 1,
+            "axes": {
+                "humor": 2,
+                "v01": 0.5,
+                "v02": 0.5,
+                "v05": 0.3
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        },
+        "assombro": {
+            "weight": 1,
+            "axes": {
+                "wonder": 2,
+                "imagination": 0.7,
+                "v05": 0.7
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        },
+        "perigo": {
+            "weight": 1,
+            "axes": {
+                "danger": 2,
+                "rupture": 0.8,
+                "v07": 0.8
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        },
+        "melancolia": {
+            "weight": 1,
+            "axes": {
+                "melancholy": 2.5,
+                "death": 0.5,
+                "v07": 1.6
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        },
+        "vida": {
+            "weight": 1,
+            "axes": {
+                "life": 2,
+                "v04": 0.6
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        },
+        "morte": {
+            "weight": 1,
+            "axes": {
+                "death": 2,
+                "melancholy": 0.8,
+                "v07": 1
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        },
+        "imaginacao": {
+            "weight": 1,
+            "axes": {
+                "imagination": 2,
+                "wonder": 0.7,
+                "v05": 0.8
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        },
+        "realidade": {
+            "weight": 1,
+            "axes": {
+                "reality": 2,
+                "present": 0.7,
+                "v06": 0.7
+            },
+            "families": [
+                "atmosphere-meaning"
+            ]
+        }
+    },
+    "widgetAffinities": {},
+    "blockAffinities": {
+        "assembly": {
+            "machine": 1.2
+        },
+        "activation": {
+            "machine": 0.8,
+            "paradox": 0.6
+        },
+        "world": {
+            "past": 0.5,
+            "future": 0.5,
+            "terrestrial": 0.8,
+            "aerial": 0.8,
+            "imagination": 0.5
+        },
+        "crisis": {
+            "danger": 1,
+            "rupture": 1,
+            "paradox": 0.7
+        },
+        "return": {
+            "kitchen": 1.5,
+            "ancestry": 0.6,
+            "melancholy": 0.4
+        },
+        "consequences": {
+            "melancholy": 0.8,
+            "death": 0.5,
+            "life": 0.4,
+            "paradox": 0.6
+        }
+    },
+    "continuityRules": {
+        "sameVersionBonus": 1.25,
+        "dominantBonus": 0.8,
+        "titleQuadrantDominant": "q07",
+        "linkedGroups": [
+            [
+                "q11",
+                "q12",
+                "q20"
+            ],
+            [
+                "q13",
+                "q14",
+                "q15",
+                "q16",
+                "q17",
+                "q18"
+            ],
+            [
+                "q21",
+                "q22",
+                "q23"
+            ],
+            [
+                "q24",
+                "q25",
+                "q26",
+                "q27",
+                "q28",
+                "q29"
+            ]
+        ]
+    },
+    "conflictRules": [
+        {
+            "axes": [
+                "life",
+                "death"
+            ],
+            "penalty": 0.4
+        },
+        {
+            "axes": [
+                "humor",
+                "melancholy"
+            ],
+            "penalty": 0.25
+        }
+    ],
+    "synergyRules": [
+        {
+            "axes": [
+                "paradox",
+                "machine"
+            ],
+            "bonus": 0.7
+        },
+        {
+            "axes": [
+                "kitchen",
+                "ancestry"
+            ],
+            "bonus": 0.6
+        },
+        {
+            "axes": [
+                "future",
+                "melancholy"
+            ],
+            "bonus": 0.7
+        }
+    ],
+    "variationLimits": {
+        "defaultSecondaryVersions": 2,
+        "expandedSecondaryVersions": 4,
+        "mixingAxes": [
+            "paradox",
+            "imagination",
+            "reality"
+        ],
+        "mixingThreshold": 4
+    },
+    "tieBreakStrategy": "sha256(seed + normalizedState + revision + rulesVersion + context) ascending"
+}

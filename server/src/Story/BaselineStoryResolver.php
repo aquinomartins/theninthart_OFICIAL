@@ -7,14 +7,14 @@ use PDO;
 use RuntimeException;
 use Tna\Support\Json;
 
-final class BaselineStoryResolver
+final class BaselineStoryResolver implements StoryResolverInterface
 {
     public const RESOLUTION_MODE = 'baseline-v1';
     public const DOMINANT_VERSION = 'v01';
     public const TITLE = 'A Tapioca do T-Rex';
 
     /** @return array<string,mixed> */
-    public function resolve(PDO $pdo, int $seed): array
+    public function resolve(PDO $pdo, int $seed, array $controls = [], array $widgets = [], int $revision = 1): array
     {
         $version = $this->version($pdo);
         $variants = $this->variants($pdo);
@@ -53,8 +53,8 @@ final class BaselineStoryResolver
             'versions' => ['dominant' => self::DOMINANT_VERSION, 'blocks' => array_values($blocks)],
             'blocks' => array_values($blocks),
             'selections' => $selections,
-            'resolvedState' => ['title' => self::TITLE, 'resolutionMode' => self::RESOLUTION_MODE, 'dominantVersion' => self::DOMINANT_VERSION, 'selectionCount' => 29, 'blockCount' => 6],
-            'trace' => ['resolver' => 'BaselineStoryResolver', 'mode' => self::RESOLUTION_MODE, 'weightsApplied' => false, 'steps' => ['selected dominant version v01', 'selected fixed slots q01-v01 through q29-v01', 'validated 29 selections and six blocks']],
+            'resolvedState' => ['title' => self::TITLE, 'resolutionMode' => self::RESOLUTION_MODE, 'dominantVersion' => self::DOMINANT_VERSION, 'secondaryVersions' => [], 'selectionCount' => 29, 'blockCount' => 6, 'rulesVersion' => 'baseline-v1', 'stateHash' => null],
+            'trace' => ['resolver' => 'BaselineStoryResolver', 'mode' => self::RESOLUTION_MODE, 'rulesVersion' => 'baseline-v1', 'seed' => $seed, 'stateHash' => null, 'weightsApplied' => false, 'fallbackUsed' => false, 'fallbackReason' => null, 'steps' => ['selected dominant version v01', 'selected fixed slots q01-v01 through q29-v01', 'validated 29 selections and six blocks']],
         ];
     }
 
@@ -71,7 +71,7 @@ final class BaselineStoryResolver
     /** @return list<array<string,mixed>> */
     private function variants(PDO $pdo): array
     {
-        $sql = "SELECT qv.id AS variant_id,qv.slot_key,qv.quadrant_id,qv.quadrant_number,qv.position,qv.title,qv.narrative_payload_json,q.stable_key AS quadrant_key,q.block_key,q.block_label FROM quadrant_variants qv JOIN story_versions sv ON sv.id=qv.story_version_id JOIN quadrants q ON q.id=qv.quadrant_id WHERE sv.stable_key='v01' AND qv.slot_key REGEXP '^q[0-9][0-9]-v01$' ORDER BY qv.quadrant_number";
+        $sql = "SELECT qv.id AS variant_id,qv.slot_key,qv.quadrant_id,qv.quadrant_number,qv.position,qv.title,qv.narrative_payload_json,q.stable_key AS quadrant_key,q.block_key,q.block_label FROM quadrant_variants qv JOIN story_versions sv ON sv.id=qv.story_version_id JOIN quadrants q ON q.id=qv.quadrant_id WHERE sv.stable_key='v01' AND qv.slot_key LIKE 'q__-v01' ORDER BY qv.quadrant_number";
         $rows = $pdo->query($sql)->fetchAll();
         return is_array($rows) ? $rows : [];
     }
