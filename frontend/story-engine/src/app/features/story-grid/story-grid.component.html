@@ -1,1 +1,30 @@
-<section class="story-grid" role="list" aria-label="História em 29 quadrantes" data-angular-story-grid>@for (quadrant of quadrants; track quadrant.id) { @if (slotForQuadrant(quadrant.id); as slot) { <tna-story-panel [quadrant]="quadrant" [slot]="slot" /> } }</section>
+<section class="story-sequence" aria-label="História em 29 quadrantes" data-angular-story-grid>
+  <div class="story-main-sequence" role="list" aria-label="Sequência principal">
+    @for (group of mainGroups; track group.id) {
+      <section class="story-row story-row--{{ group.id }}" [attr.data-story-group]="group.id" [attr.aria-label]="group.label">
+        @for (id of group.quadrantIds; track id) {
+          @if (quadrantById(id); as quadrant) { @if (slotForQuadrant(quadrant.id); as slot) {
+            <div class="story-grid-cell story-grid-cell--{{ quadrant.id }}" [attr.data-grid-quadrant]="quadrant.id">
+              <tna-story-panel [quadrant]="quadrant" [slot]="slot" />
+            </div>
+          } }
+        }
+      </section>
+    }
+  </div>
+  <section class="story-carousel-shell" aria-label="Consequências da narrativa" data-story-group="consequences">
+    <div class="story-carousel-controls">
+      <button class="story-carousel-button" type="button" aria-label="Ver consequência anterior" [disabled]="atCarouselStart()" (click)="scrollCarousel(-1)">←</button>
+      <button class="story-carousel-button" type="button" aria-label="Ver próxima consequência" [disabled]="atCarouselEnd()" (click)="scrollCarousel(1)">→</button>
+    </div>
+    <div #carouselViewport class="story-carousel-viewport" data-story-carousel role="list" (scroll)="updateCarouselState()" aria-label="Carrossel de consequências">
+      @for (id of carouselGroup.quadrantIds; track id) {
+        @if (quadrantById(id); as quadrant) { @if (slotForQuadrant(quadrant.id); as slot) {
+          <div class="story-carousel-item story-grid-cell story-grid-cell--{{ quadrant.id }}" [attr.data-grid-quadrant]="quadrant.id">
+            <tna-story-panel [quadrant]="quadrant" [slot]="slot" />
+          </div>
+        } }
+      }
+    </div>
+  </section>
+</section>

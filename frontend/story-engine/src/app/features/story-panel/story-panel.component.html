@@ -1,4 +1,4 @@
-<figure role="listitem" data-story-panel [attr.data-quadrant-id]="quadrant.id" [attr.data-version-id]="slot.versionId" [attr.data-slot-id]="slot.id" [attr.data-block-id]="quadrant.blockId" [attr.data-aspect-class]="quadrant.aspectClass" [attr.aria-labelledby]="captionId()">
+<figure class="story-panel" role="listitem" data-story-panel [attr.data-quadrant-id]="quadrant.id" [attr.data-version-id]="slot.versionId" [attr.data-slot-id]="slot.id" [attr.data-block-id]="quadrant.blockId" [attr.data-aspect-class]="quadrant.aspectClass" [attr.aria-labelledby]="captionId()">
   <div class="story-panel__media">
     @if (src(); as imageSrc) { <img [src]="imageSrc" [alt]="slot.altText" [width]="slot.dimensions.width || 1200" [height]="slot.dimensions.height || 900" loading="lazy" decoding="async" (error)="onImgError()" /> } @else { <div class="story-panel__placeholder" role="img" [attr.aria-label]="slot.altText"><span class="story-panel__placeholder-mark"><span class="story-panel__placeholder-number">{{ qLabel() }}</span><span class="story-panel__placeholder-version">{{ vLabel() }}</span><span class="story-panel__placeholder-slot">{{ slot.id }}</span></span></div> }
   </div>
