@@ -19,8 +19,8 @@
   let ready = false;
   let queue = [];
   let replaying = false;
-  let readyPollTimer = 0;
-  let readyPollStartedAt = 0;
+  let readinessTimer = null;
+  let readinessAttempts = 0;
 
   function enqueue(name, detail) {
     if (name === 'dashboard:state-snapshot') {
@@ -73,36 +73,44 @@
     // e será recebido diretamente por ele. Não o redispare aqui.
   }
 
-  function storyEngineReady() {
-    return window.TNAStoryEngine?.isReady?.() === true;
+  function engineIsReady() {
+    return Boolean(
+      window.TNAStoryEngine &&
+        typeof window.TNAStoryEngine.isReady === 'function' &&
+        window.TNAStoryEngine.isReady()
+    );
   }
 
-  function stopReadyPolling() {
-    if (readyPollTimer) {
-      window.clearTimeout(readyPollTimer);
-      readyPollTimer = 0;
+  function stopReadinessWatch() {
+    if (readinessTimer !== null) {
+      window.clearInterval(readinessTimer);
+      readinessTimer = null;
     }
   }
 
-  function pollStoryEngineReady() {
-    if (ready || storyEngineReady()) {
-      stopReadyPolling();
+  function watchEngineReadiness() {
+    stopReadinessWatch();
+
+    if (engineIsReady()) {
       flush();
       return;
     }
 
-    if (Date.now() - readyPollStartedAt >= 5000) {
-      stopReadyPolling();
-      return;
-    }
+    readinessAttempts = 0;
 
-    readyPollTimer = window.setTimeout(pollStoryEngineReady, 100);
-  }
+    readinessTimer = window.setInterval(() => {
+      readinessAttempts += 1;
 
-  function startReadyPolling() {
-    stopReadyPolling();
-    readyPollStartedAt = Date.now();
-    readyPollTimer = window.setTimeout(pollStoryEngineReady, 100);
+      if (engineIsReady()) {
+        stopReadinessWatch();
+        flush();
+        return;
+      }
+
+      if (readinessAttempts >= 40) {
+        stopReadinessWatch();
+      }
+    }, 250);
   }
 
   function flush() {
@@ -110,7 +118,7 @@
       return;
     }
 
-    stopReadyPolling();
+    stopReadinessWatch();
     ready = true;
 
     const pending = queue.splice(0);
@@ -153,11 +161,7 @@
       passive: true,
     });
 
-    if (storyEngineReady()) {
-      flush();
-    } else {
-      startReadyPolling();
-    }
+    watchEngineReadiness();
 
     window.setTimeout(snapshot, 250);
     window.setTimeout(snapshot, 1200);
@@ -179,11 +183,11 @@
       window.removeEventListener('tna:dashboard-restore-state', restore);
       window.removeEventListener('tna:story-engine-ready', flush);
 
-      stopReadyPolling();
+      stopReadinessWatch();
       queue = [];
       ready = false;
       replaying = false;
-      readyPollStartedAt = 0;
+      readinessAttempts = 0;
       window.__TNADashboardStoryBridge = false;
     },
   };
